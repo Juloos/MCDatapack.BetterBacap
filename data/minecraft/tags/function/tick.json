@@ -1,0 +1,7 @@
+{
+    "values": [
+        "utils:_tick",
+        "bac_tracker:tick",
+        "bac_display:tick"
+    ]
+}
