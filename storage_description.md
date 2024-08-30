@@ -9,8 +9,8 @@
     }
 
     pack_info: {
-        name: "BacapTracker",
-        version: "2.x.y",
+        name: "BetterBacap",
+        version: "x.y.z",
 
         // The supported bacap versions.
         bacap: "1.17",
