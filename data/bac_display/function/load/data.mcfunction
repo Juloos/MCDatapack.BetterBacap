@@ -1,4 +1,4 @@
-data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:24}
+data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:26, align:"spaced_aligned"}
 
 data modify storage bac_display:data translation set value { \
     adventure: '"Adventure"', \

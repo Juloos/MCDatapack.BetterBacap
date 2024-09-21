@@ -81,7 +81,11 @@
 
         // Minimum horizontal space per page (counting in dashes).
         // Doesn't clamp the width of the page though.
-        min_char_len: 24,
+        min_char_len: 26,
+
+        // The alignment format of the right-justified text in the page.
+        // One of "normal", "spaced", "aligned", "spaced_aligned"
+        align: "spaced_aligned",
 
         // The page initial setup, with the default number of pages (3).
         page: [{}, {}, {}]

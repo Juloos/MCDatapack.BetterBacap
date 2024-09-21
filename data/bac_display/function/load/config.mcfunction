@@ -154,6 +154,44 @@ execute unless score page_size.yellow bac_display.config = page_size.yellow bac_
     store result score page_size.yellow bac_display.config run \
         data get storage bac_display:data default_config.page_size
 
+data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.align
+execute store result score tmp bac_display.vars run function bac_display:serialize/align
+execute unless score align.any bac_display.config = align.any bac_display.config run \
+    scoreboard players operation align.any bac_display.config = tmp bac_display.vars
+execute unless score align.aqua bac_display.config = align.aqua bac_display.config run \
+    scoreboard players operation align.aqua bac_display.config = tmp bac_display.vars
+execute unless score align.black bac_display.config = align.black bac_display.config run \
+    scoreboard players operation align.black bac_display.config = tmp bac_display.vars
+execute unless score align.blue bac_display.config = align.blue bac_display.config run \
+    scoreboard players operation align.blue bac_display.config = tmp bac_display.vars
+execute unless score align.dark_aqua bac_display.config = align.dark_aqua bac_display.config run \
+    scoreboard players operation align.dark_aqua bac_display.config = tmp bac_display.vars
+execute unless score align.dark_blue bac_display.config = align.dark_blue bac_display.config run \
+    scoreboard players operation align.dark_blue bac_display.config = tmp bac_display.vars
+execute unless score align.dark_gray bac_display.config = align.dark_gray bac_display.config run \
+    scoreboard players operation align.dark_gray bac_display.config = tmp bac_display.vars
+execute unless score align.dark_green bac_display.config = align.dark_green bac_display.config run \
+    scoreboard players operation align.dark_green bac_display.config = tmp bac_display.vars
+execute unless score align.dark_purple bac_display.config = align.dark_purple bac_display.config run \
+    scoreboard players operation align.dark_purple bac_display.config = tmp bac_display.vars
+execute unless score align.dark_red bac_display.config = align.dark_red bac_display.config run \
+    scoreboard players operation align.dark_red bac_display.config = tmp bac_display.vars
+execute unless score align.gold bac_display.config = align.gold bac_display.config run \
+    scoreboard players operation align.gold bac_display.config = tmp bac_display.vars
+execute unless score align.gray bac_display.config = align.gray bac_display.config run \
+    scoreboard players operation align.gray bac_display.config = tmp bac_display.vars
+execute unless score align.green bac_display.config = align.green bac_display.config run \
+    scoreboard players operation align.green bac_display.config = tmp bac_display.vars
+execute unless score align.light_purple bac_display.config = align.light_purple bac_display.config run \
+    scoreboard players operation align.light_purple bac_display.config = tmp bac_display.vars
+execute unless score align.red bac_display.config = align.red bac_display.config run \
+    scoreboard players operation align.red bac_display.config = tmp bac_display.vars
+execute unless score align.white bac_display.config = align.white bac_display.config run \
+    scoreboard players operation align.white bac_display.config = tmp bac_display.vars
+execute unless score align.yellow bac_display.config = align.yellow bac_display.config run \
+    scoreboard players operation align.yellow bac_display.config = tmp bac_display.vars
+
 function bac_display:refresh/display/sidebar/page_size {team:"any"}
 function bac_display:refresh/display/sidebar/page_size {team:"aqua"}
 function bac_display:refresh/display/sidebar/page_size {team:"black"}
