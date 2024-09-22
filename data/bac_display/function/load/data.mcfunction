@@ -1,33 +1,33 @@
 data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:26, align:"spaced_aligned"}
 
 data modify storage bac_display:data translation set value { \
-    adventure: '"Adventure"', \
-    animal: '"Animal"', \
-    bacap: '"BlazeAndCave"', \
-    biomes: '"Biomes"', \
-    building: '"Building"', \
-    challenges: '"Super challenges"', \
-    enchanting: '"Enchanting"', \
-    end: '"End"', \
-    farming: '"Farming"', \
-    hidden: '"Hidden"', \
-    milestones: '"Milestones"', \
-    mining: '"Mining"', \
-    monsters: '"Monsters"', \
-    nether: '"Nether"', \
-    potion: '"Potion"', \
-    redstone: '"Redstone"', \
-    statistics: '"Statistics"', \
-    terralith: '"Terralith"', \
-    total: '"Total"', \
-    trophy: '"Trophies"', \
-    weaponry: '"Weaponry"', \
+    adventure: "Adventure", \
+    animal: "Animal", \
+    bacap: "BlazeAndCave", \
+    biomes: "Biomes", \
+    building: "Building", \
+    challenges: "Super challenges", \
+    enchanting: "Enchanting", \
+    end: "End", \
+    farming: "Farming", \
+    hidden: "Hidden", \
+    milestones: "Milestones", \
+    mining: "Mining", \
+    monsters: "Monsters", \
+    nether: "Nether", \
+    potion: "Potion", \
+    redstone: "Redstone", \
+    statistics: "Statistics", \
+    terralith: "Terralith", \
+    total: "Total", \
+    trophy: "Trophies", \
+    weaponry: "Weaponry", \
     \
-    blank: '"Blank line"', \
-    dash: '"Dash line"', \
-    double_dash: '"Double-dash line"', \
-    tilde: '"Tilde line"', \
-    underscore: '"Underscore line"', \
+    blank: "Blank line", \
+    dash: "Dash line", \
+    double_dash: "Double-dash line", \
+    tilde: "Tilde line", \
+    underscore: "Underscore line", \
 }
 
 
@@ -89,3 +89,21 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         14: "bac_display:refresh/callback/blank", \
     } \
 ]
+
+data modify storage bac_display:data default_config.style set value { \
+    when_complete: { \
+        text: '"color":"#54FC54"', \
+        progress_number: '"color":"#FCFC54"', \
+        separator: '"color":"#FCA800"', \
+        max_number: '"color":"#FCFC54"', \
+        progress_bar: '"color":"#54FC54"' \
+    }, \
+    when_incomplete: { \
+        text: '"color":"#FCFCFC"', \
+        progress_number: '"color":"#FCFC54"', \
+        separator: '"color":"#FCA800"', \
+        max_number: '"color":"#FCFC54"', \
+        progress_bar: '"color":"#A8A8A8"' \
+    }, \
+    pagination: '"color":"#A8A8A8","italic":true' \
+}

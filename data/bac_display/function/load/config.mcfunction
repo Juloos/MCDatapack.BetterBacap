@@ -212,43 +212,193 @@ function bac_display:refresh/display/sidebar/page_size {team:"yellow"}
 
 execute unless data storage bac_display:data page.any[0] run \
     data modify storage bac_display:data page.any set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.aqua[0] run \
+    data modify storage bac_display:data page.aqua set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.black[0] run \
+    data modify storage bac_display:data page.black set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.blue[0] run \
+    data modify storage bac_display:data page.blue set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_aqua[0] run \
+    data modify storage bac_display:data page.dark_aqua set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_blue[0] run \
+    data modify storage bac_display:data page.dark_blue set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_gray[0] run \
+    data modify storage bac_display:data page.dark_gray set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_green[0] run \
+    data modify storage bac_display:data page.dark_green set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_purple[0] run \
+    data modify storage bac_display:data page.dark_purple set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.dark_red[0] run \
+    data modify storage bac_display:data page.dark_red set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.gold[0] run \
+    data modify storage bac_display:data page.gold set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.gray[0] run \
+    data modify storage bac_display:data page.gray set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.green[0] run \
+    data modify storage bac_display:data page.green set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.light_purple[0] run \
+    data modify storage bac_display:data page.light_purple set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.red[0] run \
+    data modify storage bac_display:data page.red set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.white[0] run \
+    data modify storage bac_display:data page.white set from storage bac_display:data default_config.page
+execute unless data storage bac_display:data page.yellow[0] run \
+    data modify storage bac_display:data page.yellow set from storage bac_display:data default_config.page
 
 execute unless data storage bac_display:data refresh_callback.any[0] run \
     data modify storage bac_display:data refresh_callback.any set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.aqua[0] run \
+    data modify storage bac_display:data refresh_callback.aqua set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.black[0] run \
+    data modify storage bac_display:data refresh_callback.black set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.blue[0] run \
+    data modify storage bac_display:data refresh_callback.blue set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_aqua[0] run \
+    data modify storage bac_display:data refresh_callback.dark_aqua set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_blue[0] run \
+    data modify storage bac_display:data refresh_callback.dark_blue set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_gray[0] run \
+    data modify storage bac_display:data refresh_callback.dark_gray set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_green[0] run \
+    data modify storage bac_display:data refresh_callback.dark_green set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_purple[0] run \
+    data modify storage bac_display:data refresh_callback.dark_purple set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.dark_red[0] run \
+    data modify storage bac_display:data refresh_callback.dark_red set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.gold[0] run \
+    data modify storage bac_display:data refresh_callback.gold set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.gray[0] run \
+    data modify storage bac_display:data refresh_callback.gray set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.green[0] run \
+    data modify storage bac_display:data refresh_callback.green set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.light_purple[0] run \
+    data modify storage bac_display:data refresh_callback.light_purple set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.red[0] run \
+    data modify storage bac_display:data refresh_callback.red set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.white[0] run \
+    data modify storage bac_display:data refresh_callback.white set from storage bac_display:data default_config.refresh_callback
+execute unless data storage bac_display:data refresh_callback.yellow[0] run \
+    data modify storage bac_display:data refresh_callback.yellow set from storage bac_display:data default_config.refresh_callback
 
 data remove storage bac_display:macro data
 data modify storage bac_display:macro data.min_char_len set from storage bac_display:data default_config.min_char_len
 data modify storage bac_display:macro data.team set value "any"
-execute unless data storage bac_display:data min_char_len.any run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.any run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "aqua"
-execute unless data storage bac_display:data min_char_len.aqua run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.aqua run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "black"
-execute unless data storage bac_display:data min_char_len.black run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.black run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "blue"
-execute unless data storage bac_display:data min_char_len.blue run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.blue run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_aqua"
-execute unless data storage bac_display:data min_char_len.dark_aqua run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_aqua run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_blue"
-execute unless data storage bac_display:data min_char_len.dark_blue run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_blue run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_gray"
-execute unless data storage bac_display:data min_char_len.dark_gray run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_gray run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_green"
-execute unless data storage bac_display:data min_char_len.dark_green run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_green run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_purple"
-execute unless data storage bac_display:data min_char_len.dark_purple run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_purple run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "dark_red"
-execute unless data storage bac_display:data min_char_len.dark_red run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.dark_red run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "gold"
-execute unless data storage bac_display:data min_char_len.gold run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.gold run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "gray"
-execute unless data storage bac_display:data min_char_len.gray run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.gray run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "green"
-execute unless data storage bac_display:data min_char_len.green run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.green run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "light_purple"
-execute unless data storage bac_display:data min_char_len.light_purple run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.light_purple run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "red"
-execute unless data storage bac_display:data min_char_len.red run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.red run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "white"
-execute unless data storage bac_display:data min_char_len.white run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.white run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
 data modify storage bac_display:macro data.team set value "yellow"
-execute unless data storage bac_display:data min_char_len.yellow run function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+execute unless data storage bac_display:data min_char_len.yellow run \
+    function bac_display:refresh/display/sidebar/min_char_len with storage bac_display:macro data
+
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.any
+data modify storage bac_display:data style.any set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.aqua
+data modify storage bac_display:data style.aqua set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.black
+data modify storage bac_display:data style.black set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.blue
+data modify storage bac_display:data style.blue set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_aqua
+data modify storage bac_display:data style.dark_aqua set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_blue
+data modify storage bac_display:data style.dark_blue set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_gray
+data modify storage bac_display:data style.dark_gray set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_green
+data modify storage bac_display:data style.dark_green set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_purple
+data modify storage bac_display:data style.dark_purple set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.dark_red
+data modify storage bac_display:data style.dark_red set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.gold
+data modify storage bac_display:data style.gold set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.gray
+data modify storage bac_display:data style.gray set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.green
+data modify storage bac_display:data style.green set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.light_purple
+data modify storage bac_display:data style.light_purple set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.red
+data modify storage bac_display:data style.red set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.white
+data modify storage bac_display:data style.white set from storage minecraft:buffer style
+
+data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
+data modify storage minecraft:buffer style merge from storage bac_display:data style.yellow
+data modify storage bac_display:data style.yellow set from storage minecraft:buffer style

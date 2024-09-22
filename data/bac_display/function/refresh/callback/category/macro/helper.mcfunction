@@ -1,0 +1,12 @@
+data remove storage bac_display:macro data
+$data modify storage bac_display:macro data set value {team:"$(team)", index:$(index), text:"$(text)", progress:$(progress), max:$(max)}
+
+$scoreboard players set tmp bac_display.vars $(progress)
+$execute if score tmp bac_display.vars matches $(max).. run \
+    function bac_display:refresh/callback/category/macro/helper/load_styles {team:"$(team)", condition:"complete"}
+$execute unless score tmp bac_display.vars matches $(max).. run \
+    function bac_display:refresh/callback/category/macro/helper/load_styles {team:"$(team)", condition:"incomplete"}
+
+
+function bac_display:refresh/callback/category/macro/helper/text with storage bac_display:macro data
+$function bac_display:refresh/callback/category/macro/helper/progress {team:"$(team)"}

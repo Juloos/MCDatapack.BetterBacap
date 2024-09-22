@@ -88,12 +88,37 @@
         align: "spaced_aligned",
 
         // The page initial setup, with the default number of pages (3).
-        page: [{}, {}, {}]
+        page: [{}, {}, {}],
         // The refresh callbacks for the different pages.
         // Should be migrated to a preset system at some point.
         refresh_callbacks: [
             // Refer to the `page` and `regresh_callbacks` tags below.
-        ]
+        ],
+
+        // The style to apply in different situations to different components.
+        // Note that the style is a NBT JSON Style without the curly braces.
+        style: {
+            when_complete: {
+                // The left-justified text.
+                text: '"color":"#54FC54"',
+                // The left number of the right-justified text.
+                progress_number: '"color":"#FCFC54"',
+                // The character in-between the right-justified text.
+                separator: '"color":"#FCA800"',
+                // The right number of the right-justified text.
+                max_number: '"color":"#FCFC54"',
+                // The progress bar, if shown.
+                progress_bar: '"color":"#54FC54"'
+            },
+
+            // Same components as above
+            when_incomplete: {
+                ...
+            },
+
+            // The text describing the page number.
+            pagination: '"color":"#A8A8A8","italic":true'
+        }
     },
 
     // The refresh callbacks in use for the different teams and pages.
