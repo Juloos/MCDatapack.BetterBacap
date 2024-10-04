@@ -14,6 +14,7 @@
         //   - "both", detect all advancements changes and refresh.
         // Note that advancements are already tracked when granted, detecting
         //   them again periodically is only useful to prevent desyncs.
+        // Also note that remaining tasks are refreshed at player login. 
         refresh_type: "revoked"
     }
 

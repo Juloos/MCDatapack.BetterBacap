@@ -2,29 +2,31 @@
 scoreboard objectives add bac_tracker.config dummy
 scoreboard objectives add bac_tracker.vars dummy
 
-# Per category objectives holding the advancement counts
-scoreboard objectives add bac_tracker.category.adventure dummy
-scoreboard objectives add bac_tracker.category.animal dummy
-scoreboard objectives add bac_tracker.category.bacap dummy
-scoreboard objectives add bac_tracker.category.biomes dummy
-scoreboard objectives add bac_tracker.category.building dummy
-scoreboard objectives add bac_tracker.category.challenges dummy
-scoreboard objectives add bac_tracker.category.enchanting dummy
-scoreboard objectives add bac_tracker.category.end dummy
-scoreboard objectives add bac_tracker.category.farming dummy
-scoreboard objectives add bac_tracker.category.mining dummy
-scoreboard objectives add bac_tracker.category.monsters dummy
-scoreboard objectives add bac_tracker.category.nether dummy
-scoreboard objectives add bac_tracker.category.potion dummy
-scoreboard objectives add bac_tracker.category.redstone dummy
-scoreboard objectives add bac_tracker.category.statistics dummy
-scoreboard objectives add bac_tracker.category.terralith dummy
-scoreboard objectives add bac_tracker.category.weaponry dummy
-scoreboard objectives add bac_tracker.category.hidden dummy
-scoreboard objectives add bac_tracker.category.total dummy
+## Legacy
+# # Per category objectives holding the advancement counts
+# scoreboard objectives add bac_tracker.category.adventure dummy
+# scoreboard objectives add bac_tracker.category.animal dummy
+# scoreboard objectives add bac_tracker.category.bacap dummy
+# scoreboard objectives add bac_tracker.category.biomes dummy
+# scoreboard objectives add bac_tracker.category.building dummy
+# scoreboard objectives add bac_tracker.category.challenges dummy
+# scoreboard objectives add bac_tracker.category.enchanting dummy
+# scoreboard objectives add bac_tracker.category.end dummy
+# scoreboard objectives add bac_tracker.category.farming dummy
+# scoreboard objectives add bac_tracker.category.mining dummy
+# scoreboard objectives add bac_tracker.category.monsters dummy
+# scoreboard objectives add bac_tracker.category.nether dummy
+# scoreboard objectives add bac_tracker.category.potion dummy
+# scoreboard objectives add bac_tracker.category.redstone dummy
+# scoreboard objectives add bac_tracker.category.statistics dummy
+# scoreboard objectives add bac_tracker.category.terralith dummy
+# scoreboard objectives add bac_tracker.category.weaponry dummy
+# scoreboard objectives add bac_tracker.category.hidden dummy
+# scoreboard objectives add bac_tracker.category.total dummy
 
 # Per player objectives
 scoreboard objectives add bac_tracker.player.tracking_enabled dummy
+scoreboard objectives add bac_tracker.player.login_detection dummy
 
 # Per advancement objectives
 scoreboard objectives add bac_tracker.advancement.one_rank_per_tick dummy
