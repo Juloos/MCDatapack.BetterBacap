@@ -38,6 +38,12 @@ execute unless score target_refresh_time bac_tracker.config = target_refresh_tim
     store result score target_refresh_time bac_tracker.config run \
         data get storage bac_tracker:data default_config.target_refresh_time
 
+data remove storage bac_tracker:macro data
+data modify storage bac_tracker:macro data.value set from storage bac_tracker:data default_config.refresh_type
+execute unless score refresh_type bac_tracker.config = refresh_type bac_tracker.config \
+    store result score refresh_type bac_tracker.config run \
+        return run function bac_tracker:serialize/refresh_type
+
 # Constants
 scoreboard players set 1000 bac_tracker.vars 1000
 function bac_tracker:1rpt_reset

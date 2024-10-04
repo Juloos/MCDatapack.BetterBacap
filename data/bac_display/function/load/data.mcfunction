@@ -1,42 +1,11 @@
 data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:26, align:"spaced_aligned"}
 
-data modify storage bac_display:data translation set value { \
-    adventure: "Adventure", \
-    animal: "Animal", \
-    bacap: "BlazeAndCave", \
-    biomes: "Biomes", \
-    building: "Building", \
-    challenges: "Super challenges", \
-    enchanting: "Enchanting", \
-    end: "End", \
-    farming: "Farming", \
-    hidden: "Hidden", \
-    milestones: "Milestones", \
-    mining: "Mining", \
-    monsters: "Monsters", \
-    nether: "Nether", \
-    potion: "Potion", \
-    redstone: "Redstone", \
-    statistics: "Statistics", \
-    terralith: "Terralith", \
-    total: "Total", \
-    trophy: "Trophies", \
-    weaponry: "Weaponry", \
-    \
-    blank: "Blank line", \
-    dash: "Dash line", \
-    double_dash: "Double-dash line", \
-    tilde: "Tilde line", \
-    underscore: "Underscore line", \
-}
-
-
 data modify storage bac_display:data default_config.page set value [{}, {}, {}]
 data modify storage bac_display:data default_config.refresh_callback set value [ \
     { \
         page_number: 1, \
         title: "bac_display:refresh/callback/title/normal", \
-        0: "bac_display:refresh/callback/dash", \
+        0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
         3: "bac_display:refresh/callback/blank", \
@@ -54,7 +23,7 @@ data modify storage bac_display:data default_config.refresh_callback set value [
     }, { \
         page_number: 2, \
         title: "bac_display:refresh/callback/title/normal", \
-        0: "bac_display:refresh/callback/dash", \
+        0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
         3: "bac_display:refresh/callback/blank", \
@@ -72,7 +41,7 @@ data modify storage bac_display:data default_config.refresh_callback set value [
     }, { \
         page_number: 3, \
         title: "bac_display:refresh/callback/title/normal", \
-        0: "bac_display:refresh/callback/dash", \
+        0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
         3: "bac_display:refresh/callback/blank", \

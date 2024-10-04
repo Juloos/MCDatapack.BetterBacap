@@ -5,7 +5,16 @@
         //   for refreshing all the tracked data.
         // The tasks for tracking everything are spread over 
         //   the course of this time for less lag spikes.
-        target_refresh_time: 20
+        target_refresh_time: 20,
+
+        // Acts on the what to detect when refreshing the data.
+        //   - "none", do not refresh anything with tasks.
+        //   - "revoked", detect revoked advancements and refresh.
+        //   - "earned", detect earned advancements and refresh.
+        //   - "both", detect all advancements changes and refresh.
+        // Note that advancements are already tracked when granted, detecting
+        //   them again periodically is only useful to prevent desyncs.
+        refresh_type: "revoked"
     }
 
     pack_info: {
@@ -163,11 +172,5 @@
             },
             ...
         ]
-    }
-
-    // Custom translation keys for the different texts that may be displayed.
-    translation: {
-        // The category names are present.
-        // The blank type names are present.
     }
 ```
