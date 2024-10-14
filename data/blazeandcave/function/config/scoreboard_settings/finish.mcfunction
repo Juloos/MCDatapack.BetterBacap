@@ -1,5 +1,5 @@
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
-tellraw @s {"color":"gray","bold":false,"text":" ","extra":[{"color":"gray","bold":false,"translate":"BetterBacap - "},{"color":"gray","bold":false,"translate":"Advancement Scoreboard Display Settings"}]}
+$tellraw @s [{"color":"gray","bold":false,"text":" $(name) v$(version): bac-$(bacap) mc-$(minecraft) \n "},{"color":"gray","bold":false,"translate":"Advancement Scoreboard Display Settings"}]
 
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 

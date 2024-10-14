@@ -73,4 +73,6 @@ execute \
     if score show_sidebar.yellow bac_display.config matches 0 \
         run data modify storage blazeandcave:macro data.team_toggle set value '{"text":"[ ❌ ]","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/scoreboard_settings/toggle_all_teams_show_sidebar"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to toggle for all teams","color":"gold"}]}}'
 
-function blazeandcave:config/macro/scoreboard_settings with storage blazeandcave:macro data
+data modify storage blazeandcave:macro data merge from storage bac_tracker:data pack_info
+
+function blazeandcave:config/scoreboard_settings/finish with storage blazeandcave:macro data

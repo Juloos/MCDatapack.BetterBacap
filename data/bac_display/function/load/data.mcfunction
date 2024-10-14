@@ -1,10 +1,10 @@
-data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:26, align:"spaced_aligned"}
+data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:28, align:"spaced_aligned"}
 
 data modify storage bac_display:data default_config.page set value [{}, {}, {}]
 data modify storage bac_display:data default_config.refresh_callback set value [ \
     { \
         page_number: 1, \
-        title: "bac_display:refresh/callback/title/normal", \
+        title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
@@ -22,7 +22,7 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         14: "bac_display:refresh/callback/blank", \
     }, { \
         page_number: 2, \
-        title: "bac_display:refresh/callback/title/normal", \
+        title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
@@ -40,7 +40,7 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         14: "bac_display:refresh/callback/blank", \
     }, { \
         page_number: 3, \
-        title: "bac_display:refresh/callback/title/normal", \
+        title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
         2: "bac_display:refresh/callback/category/milestones", \
@@ -64,15 +64,30 @@ data modify storage bac_display:data default_config.style set value { \
         text: '"color":"#54FC54"', \
         progress_number: '"color":"#FCFC54"', \
         separator: '"color":"#FCA800"', \
-        max_number: '"color":"#FCFC54"', \
-        progress_bar: '"color":"#54FC54"' \
+        max_number: '"color":"#FCFC54"' \
     }, \
     when_incomplete: { \
         text: '"color":"#FCFCFC"', \
         progress_number: '"color":"#FCFC54"', \
         separator: '"color":"#FCA800"', \
-        max_number: '"color":"#FCFC54"', \
-        progress_bar: '"color":"#A8A8A8"' \
+        max_number: '"color":"#FCFC54"' \
     }, \
-    pagination: '"color":"#A8A8A8","italic":true' \
+    pagination: '"color":"#A8A8A8","italic":true', \
+    progress_bar: { \
+        done: '"color":"#54FC54"', \
+        remaining: '"color":"#A8A8A8"', \
+        left: '"color":"#FCFCFC"', \
+        right: '"color":"#FCFCFC"', \
+        percent: '"color":"#FC54FC"' \
+    } \
+}
+
+data modify storage bac_display:data default_config.progress_bar set value { \
+    bar_len: 64, \
+    percent: "right_outside" \
+}
+
+
+data modify storage bac_display:data progress_bar set value { \
+    vertical_bar: "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" \
 }

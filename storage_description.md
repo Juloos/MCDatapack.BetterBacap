@@ -15,8 +15,14 @@
         // Note that advancements are already tracked when granted, detecting
         //   them again periodically is only useful to prevent desyncs.
         // Also note that remaining tasks are refreshed at player login. 
-        refresh_type: "revoked"
-    }
+        refresh_type: "revoked",
+
+        // Whether to refresh all currently online players on /reload or not.
+        refresh_on_load: true,
+
+        // Whether to count the hidden advancements in the progress or not.
+        count_hidden: false
+    },
 
     pack_info: {
         name: "BetterBacap",
@@ -26,7 +32,16 @@
         bacap: "1.17",
 
         // The supported minecraft versions.
-        minecraft: "1.21"
+        minecraft: "1.21",
+
+        // The loaded extension packs that were successfully detected.
+        extensions: {
+            bac_terralith: 1b, 
+            bac_amplified_nether: 0b, 
+            bac_nullscape: 0b, 
+            bac_hardcore: 1b,
+            ...
+        }
     },
 
     players: [
@@ -74,7 +89,25 @@
             ]
         }, 
         ...
-    ]
+    ],
+
+    // The exhaustive list of advancements.
+    advancements: [
+        {
+            name: "elytra",
+            category: "end",
+            extra_categories: [],
+            type: "goal",
+        },
+        ...
+    ],
+
+    // The size of each category in the advancements list.
+    // Computed after each load.
+    category_size: {
+        "total": 1182,
+        ...
+    }
 ```
 
 
@@ -96,6 +129,16 @@
         // The alignment format of the right-justified text in the page.
         // One of "normal", "spaced", "aligned", "spaced_aligned"
         align: "spaced_aligned",
+
+        // Progress bar settings
+        progress_bar: {
+            // The lenth of the bar itself, in number of `|` characters.
+            bar_len: 64,
+            // The percentage of the total progress with numbers (%).
+            // One of "none", "left_outside", "right_outside",
+            //   "left_inside", "right_inside", "center_inside"
+            percent: "right_outside"
+        },
 
         // The page initial setup, with the default number of pages (3).
         page: [{}, {}, {}],
@@ -127,7 +170,35 @@
             },
 
             // The text describing the page number.
-            pagination: '"color":"#A8A8A8","italic":true'
+            pagination: '"color":"#A8A8A8","italic":true',
+
+            progress_bar: {
+                // The done part of the progress bar.
+                done: '"color":"#54FC54"',
+                // The remaining part of the progress bar.
+                remaining: '"color":"#A8A8A8"',
+                // The character(s) on the left of the progress bar.
+                left: '"color":"#FCFCFC"',
+                // The character(s) on the right of the progress bar.
+                right: '"color":"#FCFCFC"',
+                // The percentage that optionnally appear.
+                percent: '"color":"#FC54FC"'
+            }
+        }
+    },
+
+    // Constant string of same characters for the progress bar logic.
+    bar_char_set: {
+        vertical_bar: "|||||||||||||||||||||||...",
+        ...
+    }
+
+    // The progress bar settings in use for the different teams.
+    progress_bar: {
+        // The team name, which is either `any` or a team color.
+        team: {
+            bar_len: 64,
+            percent: "right_outside"
         }
     },
 
@@ -160,7 +231,7 @@
         // The team name, which is either "any" or a team color.
         team: [
             {
-                // The team this page belongs to, for convenience.
+                // The team this page belongs to, for macro convenience.
                 team: `corresponding team`,
                 
                 // The following arguments are stringified raw JSON texts,

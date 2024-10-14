@@ -25,4 +25,6 @@ scoreboard objectives add bac_display.sidebar.yellow dummy
 scoreboard players set 2 bac_display.vars 2
 scoreboard players set 4 bac_display.vars 4
 scoreboard players set 7 bac_display.vars 7
+scoreboard players set 10 bac_display.vars 1000
+scoreboard players set 1000 bac_display.vars 1000
 

@@ -33,8 +33,8 @@ scoreboard objectives add bac_tracker.advancement.one_rank_per_tick dummy
 
 
 # Default config
-execute unless score installed bac_tracker.config = installed bac_tracker.config run \
-    scoreboard players set installed bac_tracker.config 0
+execute unless score prevent_install_loop bac_tracker.vars = prevent_install_loop bac_tracker.vars run \
+    scoreboard players set prevent_install_loop bac_tracker.vars 0
 
 execute unless score target_refresh_time bac_tracker.config = target_refresh_time bac_tracker.config \
     store result score target_refresh_time bac_tracker.config run \
@@ -45,6 +45,14 @@ data modify storage bac_tracker:macro data.value set from storage bac_tracker:da
 execute unless score refresh_type bac_tracker.config = refresh_type bac_tracker.config \
     store result score refresh_type bac_tracker.config run \
         return run function bac_tracker:serialize/refresh_type
+
+execute unless score refresh_on_load bac_tracker.config = refresh_on_load bac_tracker.config \
+    store result score refresh_on_load bac_tracker.config run \
+        data get storage bac_tracker:data default_config.refresh_on_load
+
+execute unless score count_hidden bac_tracker.config = count_hidden bac_tracker.config \
+    store result score count_hidden bac_tracker.config run \
+        data get storage bac_tracker:data default_config.count_hidden
 
 # Constants
 scoreboard players set 1000 bac_tracker.vars 1000

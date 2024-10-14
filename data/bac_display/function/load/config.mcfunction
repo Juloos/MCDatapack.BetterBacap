@@ -156,41 +156,41 @@ execute unless score page_size.yellow bac_display.config = page_size.yellow bac_
 
 data remove storage bac_display:macro data
 data modify storage bac_display:macro data.value set from storage bac_display:data default_config.align
-execute store result score tmp bac_display.vars run function bac_display:serialize/align
+execute store result score default_align bac_display.vars run function bac_display:serialize/align
 execute unless score align.any bac_display.config = align.any bac_display.config run \
-    scoreboard players operation align.any bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.any bac_display.config = default_align bac_display.vars
 execute unless score align.aqua bac_display.config = align.aqua bac_display.config run \
-    scoreboard players operation align.aqua bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.aqua bac_display.config = default_align bac_display.vars
 execute unless score align.black bac_display.config = align.black bac_display.config run \
-    scoreboard players operation align.black bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.black bac_display.config = default_align bac_display.vars
 execute unless score align.blue bac_display.config = align.blue bac_display.config run \
-    scoreboard players operation align.blue bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.blue bac_display.config = default_align bac_display.vars
 execute unless score align.dark_aqua bac_display.config = align.dark_aqua bac_display.config run \
-    scoreboard players operation align.dark_aqua bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_aqua bac_display.config = default_align bac_display.vars
 execute unless score align.dark_blue bac_display.config = align.dark_blue bac_display.config run \
-    scoreboard players operation align.dark_blue bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_blue bac_display.config = default_align bac_display.vars
 execute unless score align.dark_gray bac_display.config = align.dark_gray bac_display.config run \
-    scoreboard players operation align.dark_gray bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_gray bac_display.config = default_align bac_display.vars
 execute unless score align.dark_green bac_display.config = align.dark_green bac_display.config run \
-    scoreboard players operation align.dark_green bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_green bac_display.config = default_align bac_display.vars
 execute unless score align.dark_purple bac_display.config = align.dark_purple bac_display.config run \
-    scoreboard players operation align.dark_purple bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_purple bac_display.config = default_align bac_display.vars
 execute unless score align.dark_red bac_display.config = align.dark_red bac_display.config run \
-    scoreboard players operation align.dark_red bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.dark_red bac_display.config = default_align bac_display.vars
 execute unless score align.gold bac_display.config = align.gold bac_display.config run \
-    scoreboard players operation align.gold bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.gold bac_display.config = default_align bac_display.vars
 execute unless score align.gray bac_display.config = align.gray bac_display.config run \
-    scoreboard players operation align.gray bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.gray bac_display.config = default_align bac_display.vars
 execute unless score align.green bac_display.config = align.green bac_display.config run \
-    scoreboard players operation align.green bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.green bac_display.config = default_align bac_display.vars
 execute unless score align.light_purple bac_display.config = align.light_purple bac_display.config run \
-    scoreboard players operation align.light_purple bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.light_purple bac_display.config = default_align bac_display.vars
 execute unless score align.red bac_display.config = align.red bac_display.config run \
-    scoreboard players operation align.red bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.red bac_display.config = default_align bac_display.vars
 execute unless score align.white bac_display.config = align.white bac_display.config run \
-    scoreboard players operation align.white bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.white bac_display.config = default_align bac_display.vars
 execute unless score align.yellow bac_display.config = align.yellow bac_display.config run \
-    scoreboard players operation align.yellow bac_display.config = tmp bac_display.vars
+    scoreboard players operation align.yellow bac_display.config = default_align bac_display.vars
 
 function bac_display:refresh/display/sidebar/page_size {team:"any"}
 function bac_display:refresh/display/sidebar/page_size {team:"aqua"}
@@ -402,3 +402,111 @@ data modify storage bac_display:data style.white set from storage minecraft:buff
 data modify storage minecraft:buffer style set from storage bac_display:data default_config.style
 data modify storage minecraft:buffer style merge from storage bac_display:data style.yellow
 data modify storage bac_display:data style.yellow set from storage minecraft:buffer style
+
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.any
+data modify storage bac_display:data progress_bar.any set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.aqua
+data modify storage bac_display:data progress_bar.aqua set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.black
+data modify storage bac_display:data progress_bar.black set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.blue
+data modify storage bac_display:data progress_bar.blue set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_aqua
+data modify storage bac_display:data progress_bar.dark_aqua set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_blue
+data modify storage bac_display:data progress_bar.dark_blue set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_gray
+data modify storage bac_display:data progress_bar.dark_gray set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_green
+data modify storage bac_display:data progress_bar.dark_green set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_purple
+data modify storage bac_display:data progress_bar.dark_purple set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.dark_red
+data modify storage bac_display:data progress_bar.dark_red set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.gold
+data modify storage bac_display:data progress_bar.gold set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.gray
+data modify storage bac_display:data progress_bar.gray set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.green
+data modify storage bac_display:data progress_bar.green set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.light_purple
+data modify storage bac_display:data progress_bar.light_purple set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.red
+data modify storage bac_display:data progress_bar.red set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.white
+data modify storage bac_display:data progress_bar.white set from storage minecraft:buffer progress_bar
+
+data modify storage minecraft:buffer progress_bar set from storage bac_display:data default_config.progress_bar
+data modify storage minecraft:buffer progress_bar merge from storage bac_display:data progress_bar.yellow
+data modify storage bac_display:data progress_bar.yellow set from storage minecraft:buffer progress_bar
+
+
+data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.progress_bar.percent
+execute store result score default_percent bac_display.vars run function bac_display:serialize/percent
+execute unless score percent.any bac_display.config = percent.any bac_display.config run \
+    scoreboard players operation percent.any bac_display.config = default_percent bac_display.vars
+execute unless score percent.aqua bac_display.config = percent.aqua bac_display.config run \
+    scoreboard players operation percent.aqua bac_display.config = default_percent bac_display.vars
+execute unless score percent.black bac_display.config = percent.black bac_display.config run \
+    scoreboard players operation percent.black bac_display.config = default_percent bac_display.vars
+execute unless score percent.blue bac_display.config = percent.blue bac_display.config run \
+    scoreboard players operation percent.blue bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_aqua bac_display.config = percent.dark_aqua bac_display.config run \
+    scoreboard players operation percent.dark_aqua bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_blue bac_display.config = percent.dark_blue bac_display.config run \
+    scoreboard players operation percent.dark_blue bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_gray bac_display.config = percent.dark_gray bac_display.config run \
+    scoreboard players operation percent.dark_gray bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_green bac_display.config = percent.dark_green bac_display.config run \
+    scoreboard players operation percent.dark_green bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_purple bac_display.config = percent.dark_purple bac_display.config run \
+    scoreboard players operation percent.dark_purple bac_display.config = default_percent bac_display.vars
+execute unless score percent.dark_red bac_display.config = percent.dark_red bac_display.config run \
+    scoreboard players operation percent.dark_red bac_display.config = default_percent bac_display.vars
+execute unless score percent.gold bac_display.config = percent.gold bac_display.config run \
+    scoreboard players operation percent.gold bac_display.config = default_percent bac_display.vars
+execute unless score percent.gray bac_display.config = percent.gray bac_display.config run \
+    scoreboard players operation percent.gray bac_display.config = default_percent bac_display.vars
+execute unless score percent.green bac_display.config = percent.green bac_display.config run \
+    scoreboard players operation percent.green bac_display.config = default_percent bac_display.vars
+execute unless score percent.light_purple bac_display.config = percent.light_purple bac_display.config run \
+    scoreboard players operation percent.light_purple bac_display.config = default_percent bac_display.vars
+execute unless score percent.red bac_display.config = percent.red bac_display.config run \
+    scoreboard players operation percent.red bac_display.config = default_percent bac_display.vars
+execute unless score percent.white bac_display.config = percent.white bac_display.config run \
+    scoreboard players operation percent.white bac_display.config = default_percent bac_display.vars
+execute unless score percent.yellow bac_display.config = percent.yellow bac_display.config run \
+    scoreboard players operation percent.yellow bac_display.config = default_percent bac_display.vars

@@ -6,4 +6,4 @@ $execute if data storage bac_display:data page.$(team)[{team:"any"}] run \
     data modify storage bac_display:data page.$(team)[0].sidebar set value "sidebar"
 $execute unless data storage bac_display:data page.$(team)[{team:"any"}] run \
     data modify storage bac_display:data page.$(team)[0].sidebar set value "sidebar.team.$(team)"
-$function bac_display:refresh/display/macro/sidebar with storage bac_display:data page.$(team)[0]
+$function bac_display:refresh/display/sidebar/finish with storage bac_display:data page.$(team)[0]
