@@ -510,3 +510,9 @@ execute unless score percent.white bac_display.config = percent.white bac_displa
     scoreboard players operation percent.white bac_display.config = default_percent bac_display.vars
 execute unless score percent.yellow bac_display.config = percent.yellow bac_display.config run \
     scoreboard players operation percent.yellow bac_display.config = default_percent bac_display.vars
+
+data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_hidden
+execute unless score count_hidden bac_display.config = count_hidden bac_display.config \
+    store result score count_hidden bac_display.config run \
+        function bac_display:serialize/count_hidden

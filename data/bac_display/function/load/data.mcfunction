@@ -1,4 +1,4 @@
-data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:28, align:"spaced_aligned"}
+data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:24, align:"spaced_aligned", count_hidden:"overflow"}
 
 data modify storage bac_display:data default_config.page set value [{}, {}, {}]
 data modify storage bac_display:data default_config.refresh_callback set value [ \
@@ -83,7 +83,7 @@ data modify storage bac_display:data default_config.style set value { \
 }
 
 data modify storage bac_display:data default_config.progress_bar set value { \
-    bar_len: 64, \
+    bar_len: 52, \
     percent: "right_outside" \
 }
 

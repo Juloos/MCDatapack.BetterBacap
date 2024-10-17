@@ -18,10 +18,7 @@
         refresh_type: "revoked",
 
         // Whether to refresh all currently online players on /reload or not.
-        refresh_on_load: true,
-
-        // Whether to count the hidden advancements in the progress or not.
-        count_hidden: false
+        refresh_on_load: true
     },
 
     pack_info: {
@@ -139,6 +136,10 @@
             //   "left_inside", "right_inside", "center_inside"
             percent: "right_outside"
         },
+
+        // Whether to count the hidden advancements in the progress or not.
+        // One of "yes", "no", "overflow".
+        count_hidden: "no",
 
         // The page initial setup, with the default number of pages (3).
         page: [{}, {}, {}],

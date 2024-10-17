@@ -7,4 +7,5 @@ $execute if score show_sidebar.$(team) bac_display.config matches 1 run \
 $execute if score show_sidebar.$(team) bac_display.config matches 0 run \
     scoreboard objectives setdisplay $(sidebar)
 
+function bac_display:refresh
 function blazeandcave:config/scoreboard_settings

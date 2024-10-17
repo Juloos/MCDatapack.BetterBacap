@@ -69,4 +69,5 @@ execute if score tmp bac_display.vars matches 0 run scoreboard objectives setdis
 execute if score tmp bac_display.vars matches 0 run scoreboard objectives setdisplay sidebar.team.gray
 execute if score tmp bac_display.vars matches 0 run scoreboard objectives setdisplay sidebar.team.black
 
+function bac_display:refresh
 function blazeandcave:config/scoreboard_settings
