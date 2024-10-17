@@ -4,4 +4,4 @@ execute unless data storage bac_tracker:data pack_info run data merge storage ba
 
 data modify storage bac_tracker:data default_config set value {target_refresh_time:20, refresh_type:"normal", refresh_on_load:true}
 
-data modify storage bac_tracker:data pack_info set value {name:"BetterBacap", version:"0.2.0-Beta", bacap:"1.17.2", minecraft:"1.21"}
+data modify storage bac_tracker:data pack_info set value {name:"BetterBacap", version:"0.2.1-Beta", bacap:"1.17.2", minecraft:"1.21"}
