@@ -1,6 +1,6 @@
 # BetterBacap
 
-BetterBacap is a heavy plugin datapack for Blazeandcave's Advancements Pack (Bacap) aiming at improving the global experience of players. It is designed for Minecraft 1.21+ and Bacap 1.17.2 at the moment. For earlier versions, please refer to the [legacy datapack](https://github.com/Juloos/MCDatapack.BacapTracker) this one comes from.
+BetterBacap is a heavy plugin datapack for Blazeandcave's Advancements Pack (Bacap) aiming at improving the global experience of players. It is designed for Minecraft 1.21+ and Bacap 1.17.2+ at the moment. For earlier versions, please refer to the [legacy datapack](https://github.com/Juloos/MCDatapack.BacapTracker) this one comes from.
 
 ## Features
 ### Progress tracker
