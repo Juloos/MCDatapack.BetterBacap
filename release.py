@@ -1,9 +1,11 @@
 import os
 import glob
 from git import Repo
+import zipfile
 
 NAME="BetterBacap"
 VERSION="0.3.0-Beta"
+EXCLUDED_FILES=[".gitignore", "release.py"]
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -15,8 +17,9 @@ for datafile in glob.glob("bacap_v*/**/data.mcfunction", recursive=True):
     with open(datafile, "w") as f:
         f.write(datamap[datafile].replace("$NAME", NAME).replace("$VERSION", VERSION))
 
-with open(f"{NAME}-{VERSION}.zip", "wb") as f:
-    Repo(".").archive(f, format="zip")
+with zipfile.ZipFile(f"{NAME}-{VERSION}.zip", "w") as zipf:
+    for gitfile in (b.path for b in Repo(".").tree().list_traverse() if b.path not in EXCLUDED_FILES):
+        zipf.write(gitfile)
 
 for datafile, data in datamap.items():
     with open(datafile, "w") as f:
