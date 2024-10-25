@@ -2,3 +2,4 @@
 **/*.zip
 data/tests/
 .vscode/
+!release.py

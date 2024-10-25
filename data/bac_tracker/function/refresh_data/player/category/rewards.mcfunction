@@ -19,3 +19,5 @@ function bac_tracker:refresh_data/player/category/rewards/potion
 function bac_tracker:refresh_data/player/category/rewards/redstone
 function bac_tracker:refresh_data/player/category/rewards/statistics
 function bac_tracker:refresh_data/player/category/rewards/weaponry
+
+function #bac_fanpack:refresh_tasks/rewards

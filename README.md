@@ -12,6 +12,8 @@ Download the latest version of BetterBacap from the [release page](https://githu
 
 Once in your world, the datapack should automatically load itself and the supported extensions correctly. 
 
+In case of any extension added after the installation of BetterBacap, you will need to reinstall it with `/function bac_tracker:reinstall`.
+
 ## How to use
 
 BetterBacap overrides the `Advancement Scoreboard Display Settings` menu to create a new interface for its features. The interface is kept similar to the original one for a seamless experience.
@@ -24,6 +26,8 @@ The official Bacap extensions are supported:
 - [Terralith extension](https://www.planetminecraft.com/data-pack/blazeandcave-s-advancements-pack-terralith-version/)
 - Amplified Nether extension
 - Nullscape extension
+
+But also all the fanpacks that followed the [BetterBacap integration guide](bac_fanpack_handlers.md).
 
 ## TODO
 - An interface for all the set up configuration settings.

@@ -78,6 +78,7 @@
             name: "dark_purple",
             advancements: [
                 {
+                    // Mostly the same fields as above.
                     name: "elytra",
                     category: "end",
                     extra_categories: [],
@@ -92,6 +93,7 @@
     // The exhaustive list of advancements.
     advancements: [
         {
+            // Same fields as above.
             name: "elytra",
             category: "end",
             extra_categories: [],
