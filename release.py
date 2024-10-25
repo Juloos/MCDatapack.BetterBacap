@@ -17,7 +17,7 @@ for datafile in glob.glob("bacap_v*/**/data.mcfunction", recursive=True):
     with open(datafile, "w") as f:
         f.write(datamap[datafile].replace("$NAME", NAME).replace("$VERSION", VERSION))
 
-with zipfile.ZipFile(f"{NAME}-{VERSION}.zip", "w") as zipf:
+with zipfile.ZipFile(f"{NAME}-{VERSION}.zip", "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zipf:
     for gitfile in (b.path for b in Repo(".").tree().list_traverse() if b.path not in EXCLUDED_FILES):
         zipf.write(gitfile)
 
