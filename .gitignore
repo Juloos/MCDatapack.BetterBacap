@@ -3,3 +3,6 @@
 data/tests/
 .vscode/
 !release.py
+
+# Mac…
+.DS_Store
