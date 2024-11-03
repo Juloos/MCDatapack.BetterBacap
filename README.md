@@ -16,6 +16,8 @@ In case of any extension added after the installation of BetterBacap, you will n
 
 ## How to use
 
+Open Bacap's config menu with `/function blazeandcave:config`.
+
 BetterBacap overrides the `Advancement Scoreboard Display Settings` menu to create a new interface for its features. The interface is kept similar to the original one for a seamless experience.
 
 Most of the settings do not have an interface yet (this is a work in progress). But if you wish to try and customize them out by yourself you will need to check the code (a mix of scoreboard and data storage are used for configuration) as well as `storage_description.md`.
