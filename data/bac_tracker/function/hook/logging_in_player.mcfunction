@@ -9,6 +9,6 @@ function bac_tracker:refresh_data/player/storage_player_at_0 with storage bac_tr
 # The reversed conditions of bac_tracker:refresh_data/player/all
 execute if score refresh_type bac_tracker.config matches 0..2 \
     unless score refresh_type bac_tracker.config matches 1 run \
-        function bac_tracker:refresh_data/player/category/rewards
+        function bac_tracker:refresh_data/player/category/backwards
 execute if score refresh_type bac_tracker.config matches 0..1 run \
-    function bac_tracker:refresh_data/player/category/backwards
+    function bac_tracker:refresh_data/player/category/rewards
