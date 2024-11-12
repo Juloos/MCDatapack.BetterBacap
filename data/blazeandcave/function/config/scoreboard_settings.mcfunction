@@ -1,3 +1,5 @@
+# Rewrites everything from bacap here
+
 data remove storage blazeandcave:macro data
 
 execute if score show_sidebar.any bac_display.config matches 1 run data modify storage blazeandcave:macro data.show_sidebar_any set value "✔"

@@ -1,3 +1,5 @@
+# Copy of bacap's scoreboard_settings but with the Go back command modified
+
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 tellraw @s {"color":"gray","bold":false,"text":" ","extra":[{"color":"gray","bold":false,"translate":"Advancement Scoreboard Display Settings"}]}
 
