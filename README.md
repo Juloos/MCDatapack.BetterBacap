@@ -20,7 +20,7 @@ Open Bacap's config menu with `/function blazeandcave:config`.
 
 BetterBacap overrides the `Advancement Scoreboard Display Settings` menu to create a new interface for its features. The interface is kept similar to the original one for a seamless experience.
 
-Most of the settings do not have an interface yet (this is a work in progress). But if you wish to try and customize them out by yourself you will need to check the code (a mix of scoreboard and data storage are used for configuration) as well as `storage_description.md`.
+Most of the settings do not have an interface yet (this is a work in progress). But if you wish to try and customize them out by yourself you will need to check the code (a mix of scoreboard and data storage are used for configuration) as well as [storage_description.md](storage_description.md).
 
 ## Feature supports
 The official Bacap extensions are supported:
@@ -30,6 +30,11 @@ The official Bacap extensions are supported:
 - Nullscape extension
 
 But also all the fanpacks that followed the [BetterBacap integration guide](bac_fanpack_handlers.md).
+
+## Build
+If you wish to modify the code and run the datapack yourself, you have to run the [release.py](release.py) script. It will create a zipped datapack from all the tracked files\* with the correct meta information.
+
+\*: You need to add new files to the git repository in order to track them.
 
 ## TODO
 - An interface for all the set up configuration settings.
