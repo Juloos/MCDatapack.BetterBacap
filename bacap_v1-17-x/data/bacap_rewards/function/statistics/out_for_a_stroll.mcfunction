@@ -1,0 +1,1 @@
+function bc_rewards:statistics/out_for_a_stroll

@@ -1,0 +1,1 @@
+function bc_rewards:animal/what_does_the_fox_say

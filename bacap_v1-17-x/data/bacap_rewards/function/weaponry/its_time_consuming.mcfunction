@@ -1,0 +1,1 @@
+function bc_rewards:weaponry/its_time_consuming

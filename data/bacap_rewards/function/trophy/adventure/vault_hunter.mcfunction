@@ -1,0 +1,3 @@
+$give @s amethyst_shard[custom_name='{"translate":"Eridium","color":"#8f37bd","bold":true,"italic":false}',lore=['{"translate":"Released into the borderlands after Vault Hunters opened the Vault","color":"#8f37bd"}','{"text":" "}','{"translate":"Awarded to %s for achieving","with":[{"text":"$(player_name)","color":"white","italic":false}],"color":"gray"}','{"translate":"Vault Hunter","color":"#75E1FF","italic":false}'],custom_model_data={floats:[131]},custom_data={Trophy:1b},enchantment_glint_override=true,hide_additional_tooltip={}] 1
+
+tellraw @s [{"text":" +1 ","color":"gold"},{"translate":"Eridium"}]

@@ -1,0 +1,1 @@
+function bc_rewards:adventure/genesis_of_the_end

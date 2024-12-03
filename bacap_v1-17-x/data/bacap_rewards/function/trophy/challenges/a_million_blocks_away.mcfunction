@@ -1,0 +1,1 @@
+function bc_rewards:trophy/challenges/a_million_blocks_away

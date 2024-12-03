@@ -1,0 +1,1 @@
+function bc_backwards:trophy/monsters/stealth_is_optional

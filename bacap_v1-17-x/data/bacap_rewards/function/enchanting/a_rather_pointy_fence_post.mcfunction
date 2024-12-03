@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/a_rather_pointy_fence_post

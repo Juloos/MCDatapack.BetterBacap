@@ -1,0 +1,1 @@
+function bc_backwards:monsters/stealth_is_optional

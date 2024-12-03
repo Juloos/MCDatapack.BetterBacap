@@ -1,0 +1,1 @@
+function bc_rewards:monsters/two_birds_one_arrow

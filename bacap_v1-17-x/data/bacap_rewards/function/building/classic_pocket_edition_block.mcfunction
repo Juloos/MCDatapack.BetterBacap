@@ -1,0 +1,1 @@
+function bc_rewards:building/classic_pocket_edition_block

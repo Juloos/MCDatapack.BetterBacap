@@ -1,0 +1,1 @@
+function bc_rewards:statistics/food_glorious_food

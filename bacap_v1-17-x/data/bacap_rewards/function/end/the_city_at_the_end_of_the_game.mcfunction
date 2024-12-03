@@ -1,0 +1,1 @@
+function bc_rewards:end/the_city_at_the_end_of_the_game

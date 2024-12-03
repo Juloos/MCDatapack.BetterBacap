@@ -1,0 +1,1 @@
+function bc_rewards:challenges/the_devils_distance

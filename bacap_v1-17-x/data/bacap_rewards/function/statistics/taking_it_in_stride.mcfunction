@@ -1,0 +1,1 @@
+function bc_rewards:statistics/taking_it_in_stride

@@ -1,0 +1,1 @@
+function bc_rewards:adventure/its_so_beast_like

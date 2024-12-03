@@ -17,4 +17,6 @@ execute store success storage bac_tracker:data pack_info.extensions.bac_hardcore
     datapack enable "file/BlazeandCave's Advancements Pack Hardcore.zip" last
 $datapack enable "file/$(name)-$(version).zip" last
 
+function #bacap_fanpacks:install
+
 function bac_tracker:load/installation_done_loop

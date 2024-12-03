@@ -1,0 +1,1 @@
+function bc_rewards:potion/performance_enhancing_drugs

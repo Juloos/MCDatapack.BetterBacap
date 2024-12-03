@@ -1,11 +1,15 @@
 {
     "pack": {
-        "pack_format": 57,
-        "supported_formats": [48, 57],
+        "pack_format": 60,
+        "supported_formats": [48, 57, 60],
         "description": "Cleaner Scoreboard display for BACAP, by Juloos"
     },
     "overlays": {
         "entries": [
+            {
+                "formats": [48, 57],
+                "directory": "bacap_v1-17-x"
+            },
             {
                 "formats": 48,
                 "directory": "bacap_v1-17-2"
@@ -13,6 +17,10 @@
             {
                 "formats": 57,
                 "directory": "bacap_v1-17-3"
+            },
+            {
+                "formats": 60,
+                "directory": "bacap_v1-18"
             }
         ]
     }

@@ -1,0 +1,1 @@
+function bc_rewards:trophy/challenges/stack_all_the_items

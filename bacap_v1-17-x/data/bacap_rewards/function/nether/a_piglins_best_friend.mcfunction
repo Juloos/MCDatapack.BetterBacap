@@ -1,0 +1,1 @@
+function bc_rewards:nether/a_piglins_best_friend

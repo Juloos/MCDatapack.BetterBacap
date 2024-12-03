@@ -1,0 +1,1 @@
+function bc_rewards:trophy/challenges/dragon_vs_wither_the_pre_sequel

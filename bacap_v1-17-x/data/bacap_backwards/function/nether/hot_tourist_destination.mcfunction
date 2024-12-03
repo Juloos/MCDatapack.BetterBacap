@@ -1,0 +1,1 @@
+function bc_backwards:nether/hot_tourist_destination

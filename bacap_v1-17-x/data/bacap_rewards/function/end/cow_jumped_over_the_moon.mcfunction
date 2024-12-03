@@ -1,0 +1,1 @@
+function bc_rewards:end/cow_jumped_over_the_moon

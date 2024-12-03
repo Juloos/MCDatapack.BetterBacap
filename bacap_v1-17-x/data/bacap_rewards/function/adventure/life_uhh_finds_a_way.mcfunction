@@ -1,0 +1,1 @@
+function bc_rewards:adventure/life_uhh_finds_a_way

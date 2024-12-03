@@ -1,0 +1,1 @@
+function bc_rewards:building/bubble_bubble_toil_and_trouble

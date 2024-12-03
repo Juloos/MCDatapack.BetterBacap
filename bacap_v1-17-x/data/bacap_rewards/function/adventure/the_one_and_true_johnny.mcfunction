@@ -1,0 +1,1 @@
+function bc_rewards:adventure/the_one_and_true_johnny

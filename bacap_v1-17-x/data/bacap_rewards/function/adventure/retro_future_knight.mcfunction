@@ -1,0 +1,1 @@
+function bc_rewards:adventure/retro_future_knight

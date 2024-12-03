@@ -1,0 +1,1 @@
+function bc_rewards:redstone/monstrous_sacrifices

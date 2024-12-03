@@ -1,0 +1,1 @@
+function bc_rewards:farming/the_garbage_will_do

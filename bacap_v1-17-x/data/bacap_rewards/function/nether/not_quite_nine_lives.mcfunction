@@ -1,0 +1,1 @@
+function bc_rewards:nether/not_quite_nine_lives

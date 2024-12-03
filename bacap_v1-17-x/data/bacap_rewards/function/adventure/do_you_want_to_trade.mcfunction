@@ -1,0 +1,1 @@
+function bc_rewards:adventure/do_you_want_to_trade

@@ -1,0 +1,1 @@
+function bc_rewards:building/deepslate_conspiracy

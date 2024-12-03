@@ -1,0 +1,1 @@
+function bc_rewards:trophy/challenges/dragon_vs_dragon_ii_electric_boogaloo

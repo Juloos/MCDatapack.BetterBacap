@@ -1,0 +1,1 @@
+function bc_rewards:mining/ice_bucket_challenge

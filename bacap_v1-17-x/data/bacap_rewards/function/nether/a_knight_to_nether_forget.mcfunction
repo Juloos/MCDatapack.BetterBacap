@@ -1,0 +1,1 @@
+function bc_rewards:nether/a_knight_to_nether_forget

@@ -1,0 +1,1 @@
+function bc_backwards:end/the_start_of_something

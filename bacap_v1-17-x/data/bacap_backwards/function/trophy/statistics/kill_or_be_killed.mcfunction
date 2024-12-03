@@ -1,0 +1,1 @@
+function bc_backwards:trophy/statistics/kill_or_be_killed

@@ -1,0 +1,1 @@
+function bc_rewards:challenges/zombie_apocalypse

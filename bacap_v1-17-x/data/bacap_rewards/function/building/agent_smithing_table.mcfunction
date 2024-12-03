@@ -1,0 +1,1 @@
+function bc_rewards:building/agent_smithing_table

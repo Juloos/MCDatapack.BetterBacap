@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/very_very_frightening

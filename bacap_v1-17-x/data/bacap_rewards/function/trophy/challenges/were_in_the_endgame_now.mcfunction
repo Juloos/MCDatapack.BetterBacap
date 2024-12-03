@@ -1,0 +1,1 @@
+function bc_rewards:trophy/challenges/were_in_the_endgame_now

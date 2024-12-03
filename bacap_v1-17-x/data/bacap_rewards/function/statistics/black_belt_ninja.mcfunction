@@ -1,0 +1,1 @@
+function bc_rewards:statistics/black_belt_ninja

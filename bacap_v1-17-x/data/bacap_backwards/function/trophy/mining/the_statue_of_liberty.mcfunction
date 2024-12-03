@@ -1,0 +1,1 @@
+function bc_backwards:trophy/mining/the_statue_of_liberty

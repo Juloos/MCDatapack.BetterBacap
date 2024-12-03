@@ -1,0 +1,1 @@
+function bc_rewards:mining/shriek_forever_after

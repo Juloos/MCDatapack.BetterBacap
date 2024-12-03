@@ -1,0 +1,1 @@
+function bc_rewards:animal/silence_of_the_lambs

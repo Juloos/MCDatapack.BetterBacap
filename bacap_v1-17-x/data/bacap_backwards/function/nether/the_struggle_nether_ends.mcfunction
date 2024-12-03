@@ -1,0 +1,1 @@
+function bc_backwards:nether/the_struggle_nether_ends

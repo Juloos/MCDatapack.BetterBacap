@@ -1,0 +1,1 @@
+function bc_rewards:nether/welcome_to_warp_zone

@@ -1,0 +1,1 @@
+function bc_backwards:trophy/statistics/olympic_gold_medallist

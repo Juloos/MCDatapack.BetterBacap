@@ -1,0 +1,1 @@
+function bc_rewards:animal/llama_llama_duck_king

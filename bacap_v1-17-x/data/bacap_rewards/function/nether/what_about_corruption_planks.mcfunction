@@ -1,0 +1,1 @@
+function bc_rewards:nether/what_about_corruption_planks

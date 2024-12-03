@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/bane_of_one_shotting_spiders

@@ -1,0 +1,1 @@
+function bc_rewards:building/the_rainbow_you_always_wanted

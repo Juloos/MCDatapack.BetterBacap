@@ -1,0 +1,1 @@
+function bc_rewards:nether/high_temperature_fluid_monster

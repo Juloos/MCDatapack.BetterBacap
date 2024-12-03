@@ -1,0 +1,1 @@
+function bc_rewards:building/festival_of_lights

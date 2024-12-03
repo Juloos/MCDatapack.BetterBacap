@@ -1,0 +1,1 @@
+function bc_rewards:mining/sly_copper_the_copper_heist

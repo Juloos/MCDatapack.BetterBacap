@@ -1,0 +1,1 @@
+function bc_rewards:animal/blistering_barnacles

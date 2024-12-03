@@ -1,0 +1,1 @@
+function bc_rewards:building/delicious_hot_schmoes

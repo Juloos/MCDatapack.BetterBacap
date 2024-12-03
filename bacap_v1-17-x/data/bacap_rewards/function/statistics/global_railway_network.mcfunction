@@ -1,0 +1,1 @@
+function bc_rewards:statistics/global_railway_network

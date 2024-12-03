@@ -1,0 +1,1 @@
+function bc_rewards:monsters/not_today_thank_you

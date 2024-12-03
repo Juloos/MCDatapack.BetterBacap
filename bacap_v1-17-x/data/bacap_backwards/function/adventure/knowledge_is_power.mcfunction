@@ -1,0 +1,1 @@
+function bc_backwards:adventure/knowledge_is_power

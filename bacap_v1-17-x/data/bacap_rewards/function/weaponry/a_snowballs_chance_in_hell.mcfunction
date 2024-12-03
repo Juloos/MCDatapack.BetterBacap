@@ -1,0 +1,1 @@
+function bc_rewards:weaponry/a_snowballs_chance_in_hell

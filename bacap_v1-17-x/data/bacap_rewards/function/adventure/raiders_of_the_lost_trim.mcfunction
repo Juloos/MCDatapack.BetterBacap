@@ -1,0 +1,1 @@
+function bc_rewards:adventure/raiders_of_the_lost_trim

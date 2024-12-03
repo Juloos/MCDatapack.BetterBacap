@@ -1,0 +1,1 @@
+function bc_rewards:animal/the_healing_power_of_friendship

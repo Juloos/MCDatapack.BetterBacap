@@ -1,0 +1,1 @@
+function bc_backwards:adventure/hard_mode_activated

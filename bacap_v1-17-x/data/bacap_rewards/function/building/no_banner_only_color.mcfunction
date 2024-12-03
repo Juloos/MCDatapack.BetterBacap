@@ -1,0 +1,1 @@
+function bc_rewards:building/no_banner_only_color

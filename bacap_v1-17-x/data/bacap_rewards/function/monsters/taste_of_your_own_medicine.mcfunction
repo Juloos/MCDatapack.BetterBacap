@@ -1,0 +1,1 @@
+function bc_rewards:monsters/taste_of_your_own_medicine

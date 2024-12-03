@@ -1,0 +1,1 @@
+function bc_rewards:animal/when_the_squad_hops_into_town

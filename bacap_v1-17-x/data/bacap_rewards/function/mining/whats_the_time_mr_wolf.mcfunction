@@ -1,0 +1,1 @@
+function bc_rewards:mining/whats_the_time_mr_wolf

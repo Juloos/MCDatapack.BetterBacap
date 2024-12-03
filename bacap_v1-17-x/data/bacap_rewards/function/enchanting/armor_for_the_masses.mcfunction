@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/armor_for_the_masses

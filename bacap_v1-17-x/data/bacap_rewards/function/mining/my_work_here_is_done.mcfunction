@@ -1,0 +1,1 @@
+function bc_rewards:mining/my_work_here_is_done

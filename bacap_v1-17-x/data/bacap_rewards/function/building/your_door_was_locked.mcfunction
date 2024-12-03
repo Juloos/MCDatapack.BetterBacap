@@ -1,0 +1,1 @@
+function bc_rewards:building/your_door_was_locked

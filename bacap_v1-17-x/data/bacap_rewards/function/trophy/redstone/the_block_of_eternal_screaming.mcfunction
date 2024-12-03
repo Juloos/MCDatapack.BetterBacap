@@ -1,0 +1,1 @@
+function bc_rewards:trophy/redstone/the_block_of_eternal_screaming

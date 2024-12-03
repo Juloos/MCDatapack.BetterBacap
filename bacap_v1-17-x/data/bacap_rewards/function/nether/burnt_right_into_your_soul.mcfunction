@@ -1,0 +1,1 @@
+function bc_rewards:nether/burnt_right_into_your_soul

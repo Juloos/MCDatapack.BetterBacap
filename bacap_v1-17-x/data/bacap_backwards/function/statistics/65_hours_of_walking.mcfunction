@@ -1,0 +1,1 @@
+function bc_backwards:statistics/65_hours_of_walking

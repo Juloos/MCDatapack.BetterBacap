@@ -1,0 +1,1 @@
+function bc_rewards:challenges/hearts_of_the_stack

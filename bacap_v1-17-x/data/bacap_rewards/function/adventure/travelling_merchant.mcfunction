@@ -1,0 +1,1 @@
+function bc_rewards:adventure/travelling_merchant

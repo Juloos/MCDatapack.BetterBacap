@@ -2,7 +2,7 @@
 execute unless score global bac_settings matches 0 run function bac_tracker:advancement_wards/give with storage bac_tracker:macro data
 
 # Update bac internal states
-execute unless data storage bac_tracker:macro data{adv_extra_categories:["hidden"]} run function bc_rewards:score_add
+execute unless data storage bac_tracker:macro data{adv_extra_categories:["hidden"]} run function bacap_rewards:score_add
 
 
 # Prepare data

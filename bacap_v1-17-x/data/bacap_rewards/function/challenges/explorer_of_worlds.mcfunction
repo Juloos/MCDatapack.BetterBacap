@@ -1,0 +1,1 @@
+function bc_rewards:challenges/explorer_of_worlds

@@ -1,0 +1,1 @@
+function bc_rewards:monsters/the_ender_of_ender

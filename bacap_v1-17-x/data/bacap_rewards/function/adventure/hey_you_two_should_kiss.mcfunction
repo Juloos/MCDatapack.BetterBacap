@@ -1,0 +1,1 @@
+function bc_rewards:adventure/hey_you_two_should_kiss

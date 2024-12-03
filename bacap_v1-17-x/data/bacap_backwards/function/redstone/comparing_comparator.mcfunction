@@ -1,0 +1,1 @@
+function bc_backwards:redstone/comparing_comparator

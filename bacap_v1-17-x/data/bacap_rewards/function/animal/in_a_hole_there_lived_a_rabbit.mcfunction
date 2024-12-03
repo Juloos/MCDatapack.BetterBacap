@@ -1,0 +1,1 @@
+function bc_rewards:animal/in_a_hole_there_lived_a_rabbit

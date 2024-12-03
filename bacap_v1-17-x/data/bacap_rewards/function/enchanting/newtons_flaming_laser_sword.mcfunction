@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/newtons_flaming_laser_sword

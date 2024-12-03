@@ -1,0 +1,1 @@
+function bc_rewards:biomes/were_going_on_a_bear_hunt

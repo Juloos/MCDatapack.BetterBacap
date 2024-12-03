@@ -22,6 +22,6 @@ function bac_tracker:refresh_data/player/category/rewards/redstone
 function bac_tracker:refresh_data/player/category/rewards/statistics
 function bac_tracker:refresh_data/player/category/rewards/weaponry
 
-function #bac_fanpack:refresh_tasks/rewards
+function #bacap_fanpacks:refresh_tasks/rewards
 
 scoreboard players set global bac_settings 1

@@ -1,0 +1,1 @@
+function bc_rewards:building/built_on_sand_set_in_stone

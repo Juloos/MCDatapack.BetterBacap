@@ -1,0 +1,1 @@
+function bc_rewards:animal/a_horse_in_shining_armor

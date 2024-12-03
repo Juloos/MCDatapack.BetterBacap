@@ -1,0 +1,1 @@
+function bc_rewards:adventure/smithing_with_style

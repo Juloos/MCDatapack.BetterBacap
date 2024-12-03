@@ -1,0 +1,1 @@
+function bc_rewards:trophy/adventure/a_complete_catalogue

@@ -1,0 +1,1 @@
+function bc_rewards:trophy/statistics/ancient_kung_fu_master

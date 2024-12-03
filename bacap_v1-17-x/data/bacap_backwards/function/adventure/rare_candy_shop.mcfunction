@@ -1,0 +1,1 @@
+function bc_backwards:adventure/rare_candy_shop

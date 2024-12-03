@@ -1,0 +1,1 @@
+function bc_backwards:trophy/monsters/not_afraid_of_heights

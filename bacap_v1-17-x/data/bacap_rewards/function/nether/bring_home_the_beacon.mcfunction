@@ -1,0 +1,1 @@
+function bc_rewards:nether/bring_home_the_beacon

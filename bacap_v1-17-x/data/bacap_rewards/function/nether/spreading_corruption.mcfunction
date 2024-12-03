@@ -1,0 +1,1 @@
+function bc_rewards:nether/spreading_corruption

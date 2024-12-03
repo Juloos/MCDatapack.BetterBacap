@@ -1,0 +1,1 @@
+function bc_rewards:monsters/dead_really_dont_die

@@ -1,0 +1,1 @@
+function bc_backwards:trophy/challenges/explorer_of_worlds

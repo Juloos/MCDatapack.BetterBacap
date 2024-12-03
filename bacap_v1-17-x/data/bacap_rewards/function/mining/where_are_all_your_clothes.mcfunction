@@ -1,0 +1,1 @@
+function bc_rewards:mining/where_are_all_your_clothes

@@ -1,0 +1,1 @@
+function bc_rewards:building/fruit_of_the_looms

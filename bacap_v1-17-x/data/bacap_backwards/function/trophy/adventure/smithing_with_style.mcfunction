@@ -1,0 +1,1 @@
+function bc_backwards:trophy/adventure/smithing_with_style

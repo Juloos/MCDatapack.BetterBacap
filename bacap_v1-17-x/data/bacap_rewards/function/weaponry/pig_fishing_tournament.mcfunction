@@ -1,0 +1,1 @@
+function bc_rewards:weaponry/pig_fishing_tournament

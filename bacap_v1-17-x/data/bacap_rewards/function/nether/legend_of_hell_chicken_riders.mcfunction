@@ -1,0 +1,1 @@
+function bc_rewards:nether/legend_of_hell_chicken_riders

@@ -1,0 +1,1 @@
+function bc_rewards:adventure/vexingly_hard_to_find

@@ -1,0 +1,1 @@
+function bc_rewards:adventure/under_lock_and_key

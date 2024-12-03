@@ -1,0 +1,1 @@
+function bc_rewards:mining/dungeons_and_spawners

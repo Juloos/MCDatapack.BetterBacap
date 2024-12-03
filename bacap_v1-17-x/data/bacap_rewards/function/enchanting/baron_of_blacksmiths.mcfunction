@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/baron_of_blacksmiths

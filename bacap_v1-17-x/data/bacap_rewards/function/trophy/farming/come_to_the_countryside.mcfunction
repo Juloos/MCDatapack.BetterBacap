@@ -1,0 +1,1 @@
+function bc_rewards:trophy/farming/come_to_the_countryside

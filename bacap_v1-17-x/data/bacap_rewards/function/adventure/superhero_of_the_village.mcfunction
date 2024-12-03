@@ -1,0 +1,1 @@
+function bc_rewards:adventure/superhero_of_the_village

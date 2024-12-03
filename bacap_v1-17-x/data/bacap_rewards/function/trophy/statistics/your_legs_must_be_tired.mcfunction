@@ -1,0 +1,1 @@
+function bc_rewards:trophy/statistics/your_legs_must_be_tired

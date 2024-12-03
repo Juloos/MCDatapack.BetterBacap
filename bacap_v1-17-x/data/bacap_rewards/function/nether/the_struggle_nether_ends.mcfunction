@@ -1,0 +1,1 @@
+function bc_rewards:nether/the_struggle_nether_ends

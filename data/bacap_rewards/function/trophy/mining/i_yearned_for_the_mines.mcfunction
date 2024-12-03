@@ -1,0 +1,3 @@
+$give @s player_head[custom_name='{"translate":"Steve\'s Head","color":"#a27d6a","bold":true,"italic":false}',lore=['{"translate":"I… am Steve!","color":"#a27d6a"}','{"text":" "}','{"translate":"Awarded to %s for achieving","with":[{"text":"$(player_name)","color":"white","italic":false}],"color":"gray"}','{"translate":"I yearned for the mines","color":"light_purple","italic":false}'],custom_model_data={floats:[131]},custom_data={Trophy:1b},enchantment_glint_override=true,hide_additional_tooltip={}] 1
+
+tellraw @s [{"text":" +1 ","color":"gold"},{"translate":"Steve's Head"}]

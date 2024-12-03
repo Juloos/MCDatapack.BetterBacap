@@ -1,0 +1,1 @@
+function bc_rewards:enchanting/handmade_blinding

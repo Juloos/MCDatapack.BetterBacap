@@ -29,7 +29,7 @@ The official Bacap extensions are supported:
 - Amplified Nether extension
 - Nullscape extension
 
-But also all the fanpacks that followed the [BetterBacap integration guide](bac_fanpack_handlers.md).
+But also all the fanpacks that followed the [BetterBacap integration guide](bacap_fanpacks_handlers.md).
 
 ## Build
 If you wish to modify the code and run the datapack yourself, you have to run the [release.py](release.py) script. It will create a zipped datapack from all the tracked files\* with the correct meta information.
