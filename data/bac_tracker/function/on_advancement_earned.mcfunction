@@ -17,6 +17,7 @@ $execute unless data storage bac_tracker:macro data{player_bac_team:"any"} \
 # Add the advancement to the storage of the player, the player's team, and the global progress
 function bac_tracker:advancement_wards/store with storage bac_tracker:macro data
 
+$function #bacap_fanpacks:$(adv_category)/$(adv_bac_name)
 
 # Grant advancement to teammates
 $execute if score coop bac_settings matches 1 run advancement grant @a only $(adv_full_name)
