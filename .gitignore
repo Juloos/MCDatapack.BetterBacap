@@ -2,6 +2,7 @@
 **/*.zip
 data/tests/
 res/
+__pycache__/
 .vscode/
 !release.py
 
