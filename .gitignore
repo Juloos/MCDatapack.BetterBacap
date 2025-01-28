@@ -1,6 +1,7 @@
 **/*.py
 **/*.zip
 data/tests/
+res/
 .vscode/
 !release.py
 
