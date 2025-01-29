@@ -2,8 +2,17 @@ say Factory resetting! This may take a while...
 
 
 # Remove every bit of data this datapack uses to reinstall with a fresh configuration
-data merge storage bac_display:data {default_config:{}, bar_char_set:{}, progress_bar:{}, refresh_callback:{}, page:{}}
-data merge storage bac_tracker:data {default_config:{}, pack_info:{}, players:{}, teams:{}, advancements:{}, category_size:{}}
+data remove storage bac_display:data default_config
+data remove storage bac_display:data bar_char_set
+data remove storage bac_display:data progress_bar
+data remove storage bac_display:data refresh_callback
+data remove storage bac_display:data page
+data remove storage bac_tracker:data default_config
+data remove storage bac_tracker:data pack_info
+data remove storage bac_tracker:data players
+data remove storage bac_tracker:data teams
+data remove storage bac_tracker:data advancements
+data remove storage bac_tracker:data category_size
 
 # Remove also all objectives
 scoreboard objectives remove bac_display.config
