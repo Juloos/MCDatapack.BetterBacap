@@ -4,7 +4,7 @@ from git import Repo
 import zipfile
 
 NAME="BetterBacap"
-VERSION="0.5.1-Beta"
+VERSION="0.5.2-Beta"
 EXCLUDED_FILES=[".gitignore", "release.py"]
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
