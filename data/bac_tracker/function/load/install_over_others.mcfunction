@@ -3,6 +3,9 @@ scoreboard players set prevent_install_loop bac_tracker.vars 1
 
 $say [$(name)] Starting installation process...
 
+# BetterBacap's dev env
+execute if data storage bac_tracker:dev {enable:1b} run \
+    datapack disable "file/BetterBacap"
 $datapack disable "file/$(name)-$(version).zip"
 $say [$(name)] Installation steps:  1 / 11
 
