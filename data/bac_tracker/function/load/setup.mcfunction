@@ -30,6 +30,7 @@ execute unless score refresh_on_load bac_tracker.config = refresh_on_load bac_tr
         data get storage bac_tracker:data default_config.refresh_on_load
 
 # Constants
+scoreboard players set 1 bac_tracker.vars 1
 scoreboard players set 1000 bac_tracker.vars 1000
 function bac_tracker:1rpt_reset
 

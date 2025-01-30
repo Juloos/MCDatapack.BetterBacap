@@ -1,0 +1,32 @@
+# New menu for BetterBacap settings
+
+
+# Refresh type format
+function bac_tracker:humanize/refresh_type
+data modify storage blazeandcave:macro data.refresh_type_description set from storage bac_tracker:result refresh_type
+
+execute if score refresh_type bac_tracker.config matches 0 run \
+    data modify storage blazeandcave:macro data.refresh_type_toggle set value '{"text":"[✔]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:3}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for any advancement change","color":"gold"}]}}," ",{"text":"[+]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:2}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for earned advancements only","color":"gold"}]}}," ",{"text":"[-]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:1}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for revoked advancements only","color":"gold"}]}}," ",{"text":"[❌]","color":"red"}'
+execute if score refresh_type bac_tracker.config matches 1 run \
+    data modify storage blazeandcave:macro data.refresh_type_toggle set value '{"text":"[✔]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:3}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for any advancement change","color":"gold"}]}}," ",{"text":"[+]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:2}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for earned advancements only","color":"gold"}]}}," ",{"text":"[-]","color":"yellow"}," ",{"text":"[❌]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:0}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to disable","color":"gold"}]}}'
+execute if score refresh_type bac_tracker.config matches 2 run \
+    data modify storage blazeandcave:macro data.refresh_type_toggle set value '{"text":"[✔]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:3}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for any advancement change","color":"gold"}]}}," ",{"text":"[+]","color":"yellow"}," ",{"text":"[-]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:1}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for revoked advancements only","color":"gold"}]}}," ",{"text":"[❌]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:0}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to disable","color":"gold"}]}}'
+execute if score refresh_type bac_tracker.config matches 3 run \
+    data modify storage blazeandcave:macro data.refresh_type_toggle set value '{"text":"[✔]","color":"green"}," ",{"text":"[+]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:2}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for earned advancements only","color":"gold"}]}}," ",{"text":"[-]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:1}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for revoked advancements only","color":"gold"}]}}," ",{"text":"[❌]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:0}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to disable","color":"gold"}]}}'
+execute unless score refresh_type bac_tracker.config matches 0..3 run \
+    data modify storage blazeandcave:macro data.refresh_type_toggle set value '{"text":"[✔]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:3}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for any advancement change","color":"gold"}]}}," ",{"text":"[+]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:2}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for earned advancements only","color":"gold"}]}}," ",{"text":"[-]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:1}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to enable for revoked advancements only","color":"gold"}]}}," ",{"text":"[❌]","color":"gray","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/tracker_settings/refresh_type_change {new_value:0}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to disable","color":"gold"}]}}'
+
+execute if score refresh_on_load bac_tracker.config matches 0 run \
+    data modify storage blazeandcave:macro data.refresh_on_load_toggle set value '"text":"[ ❌ ]","color":"red"'
+execute if score refresh_on_load bac_tracker.config matches 1 run \
+    data modify storage blazeandcave:macro data.refresh_on_load_toggle set value '"text":"[ ✔ ]","color":"green"'
+
+execute if score refresh_on_load bac_tracker.config matches 0 run \
+    data modify storage blazeandcave:macro data.refresh_on_load_status set value "disabled"
+execute if score refresh_on_load bac_tracker.config matches 1 run \
+    data modify storage blazeandcave:macro data.refresh_on_load_status set value "enabled"
+
+
+data modify storage blazeandcave:macro data merge from storage bac_tracker:data pack_info
+
+function blazeandcave:config/tracker_settings/finish with storage blazeandcave:macro data
