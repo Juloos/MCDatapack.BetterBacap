@@ -39,6 +39,8 @@ execute store success storage bac_tracker:data pack_info.extensions.bac_hardcore
 $say [$(name)] Installation steps:  9 / 11
 
 $datapack enable "file/$(name)-$(version).zip" last
+execute if data storage bac_tracker:dev {enable:1b} run \
+    datapack enable "file/BetterBacap" last
 $say [$(name)] Installation steps: 10 / 11
 
 
