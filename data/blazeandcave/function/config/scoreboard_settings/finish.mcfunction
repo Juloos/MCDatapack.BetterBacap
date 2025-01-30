@@ -1,3 +1,4 @@
+tellraw @s "\n"
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 $tellraw @s [{"color":"gray","bold":false,"text":" $(name) v$(version): bac-$(bacap) mc-$(minecraft) \n "},{"color":"gray","bold":false,"translate":"Advancement Scoreboard Display Settings"}]
 

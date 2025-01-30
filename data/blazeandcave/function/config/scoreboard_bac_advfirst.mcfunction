@@ -1,5 +1,6 @@
 # Rewrites the Go back command from bacap here
 
+tellraw @s "\n"
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 tellraw @s {"color":"gray","bold":false,"text":" ","extra":[{"color":"yellow","bold":false,"translate":"How would you like this scoreboard to be displayed?"}]}
 
