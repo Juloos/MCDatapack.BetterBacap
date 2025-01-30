@@ -5,6 +5,6 @@ execute unless data storage bac_tracker:data pack_info run data merge storage ba
 execute unless data storage bac_tracker:data pack_info run \
     function #bacap_fanpacks:advancements_data
 
-data modify storage bac_tracker:data default_config set value {target_refresh_time:20, refresh_type:"revoked", refresh_on_load:true}
+data modify storage bac_tracker:data default_config set value {target_refresh_time:200, refresh_type:"revoked", refresh_on_load:true}
 
 data modify storage bac_tracker:data pack_info merge value {name:"$NAME", version:"$VERSION", bacap:"1.18-1.18.1", minecraft:"1.21.x"}
