@@ -4,10 +4,11 @@ $execute store result score bar_len bac_display.vars run \
 $execute store result score total_progress bac_display.vars \
     if data storage bac_tracker:data teams[{name:"$(team)"}].advancements[]
 scoreboard players set progress_hidden bac_display.vars 0
-$execute if score count_hidden bac_display.config matches 0 store result score progress_hidden bac_display.vars \
+$execute if score count_hidden.$(team) bac_display.config matches 0 store result score progress_hidden bac_display.vars \
     if data storage bac_tracker:data teams[{name:"$(team)"}].advancements[{extra_categories:["hidden"]}]
 scoreboard players operation total_progress bac_display.vars -= progress_hidden bac_display.vars
 
+$function bac_display:refresh/callback/title/progress_bar/prepare_data_prequel {team:"$(team)"}
 function bac_display:refresh/callback/title/progress_bar/prepare_data
 
 $data modify storage bac_display:macro data set value {team:"$(team)"}

@@ -28,6 +28,6 @@ tellraw @s ["",{"text":"[ »» ]","color":"red","clickEvent":{"action":"run_comm
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 
 # Go back
-tellraw @s ["",{"text":"[ «« ]","color":"red","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/scoreboard_settings"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to go back","color":"gold"}]}}," ",{"translate":"Go back to previous config menu"}]
+tellraw @s ["",{"text":"[ «« ]","color":"red","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/scoreboard_settings"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to go back","color":"gold"}]}}," ",{"translate":"Go back"}]
 
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}

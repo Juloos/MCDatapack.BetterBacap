@@ -1,8 +1,3 @@
-data modify storage bac_display:macro data set value {char_type:"vertical_bar"}
-execute store result score total_max bac_display.vars run \
-    data get storage bac_tracker:data category_size.total 1
-
-
 scoreboard players operation total_progress bac_display.vars *= 1000 bac_display.vars
 execute store result score percent_decimals bac_display.vars store result score percent_remainder bac_display.vars run \
     scoreboard players operation total_progress bac_display.vars /= total_max bac_display.vars

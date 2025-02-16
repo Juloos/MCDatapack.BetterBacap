@@ -10,4 +10,4 @@ execute if score refresh_type bac_tracker.config matches 2 run return run \
 execute if score refresh_type bac_tracker.config matches 3 run return run \
     data modify storage bac_tracker:result refresh_type set value "Any advancement change"
 
-data modify storage bac_tracker:result refresh_type set value "Unknown value"
+data modify storage bac_tracker:result refresh_type set value "(Unknown)"

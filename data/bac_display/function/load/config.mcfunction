@@ -513,6 +513,38 @@ execute unless score percent.yellow bac_display.config = percent.yellow bac_disp
 
 data remove storage bac_display:macro data
 data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_hidden
-execute unless score count_hidden bac_display.config = count_hidden bac_display.config \
-    store result score count_hidden bac_display.config run \
-        function bac_display:serialize/count_hidden
+execute store result score default_count_hidden bac_display.vars run function bac_display:serialize/count_hidden
+execute unless score count_hidden.any bac_display.config = count_hidden.any bac_display.config run \
+    scoreboard players operation count_hidden.any bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.aqua bac_display.config = count_hidden.aqua bac_display.config run \
+    scoreboard players operation count_hidden.aqua bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.black bac_display.config = count_hidden.black bac_display.config run \
+    scoreboard players operation count_hidden.black bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.blue bac_display.config = count_hidden.blue bac_display.config run \
+    scoreboard players operation count_hidden.blue bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_aqua bac_display.config = count_hidden.dark_aqua bac_display.config run \
+    scoreboard players operation count_hidden.dark_aqua bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_blue bac_display.config = count_hidden.dark_blue bac_display.config run \
+    scoreboard players operation count_hidden.dark_blue bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_gray bac_display.config = count_hidden.dark_gray bac_display.config run \
+    scoreboard players operation count_hidden.dark_gray bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_green bac_display.config = count_hidden.dark_green bac_display.config run \
+    scoreboard players operation count_hidden.dark_green bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_purple bac_display.config = count_hidden.dark_purple bac_display.config run \
+    scoreboard players operation count_hidden.dark_purple bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.dark_red bac_display.config = count_hidden.dark_red bac_display.config run \
+    scoreboard players operation count_hidden.dark_red bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.gold bac_display.config = count_hidden.gold bac_display.config run \
+    scoreboard players operation count_hidden.gold bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.gray bac_display.config = count_hidden.gray bac_display.config run \
+    scoreboard players operation count_hidden.gray bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.green bac_display.config = count_hidden.green bac_display.config run \
+    scoreboard players operation count_hidden.green bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.light_purple bac_display.config = count_hidden.light_purple bac_display.config run \
+    scoreboard players operation count_hidden.light_purple bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.red bac_display.config = count_hidden.red bac_display.config run \
+    scoreboard players operation count_hidden.red bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.white bac_display.config = count_hidden.white bac_display.config run \
+    scoreboard players operation count_hidden.white bac_display.config = default_count_hidden bac_display.vars
+execute unless score count_hidden.yellow bac_display.config = count_hidden.yellow bac_display.config run \
+    scoreboard players operation count_hidden.yellow bac_display.config = default_count_hidden bac_display.vars

@@ -102,10 +102,14 @@
         ...
     ],
 
-    // The size of each category in the advancements list.
-    // Computed after each load.
+    // The size of each category in the advancements list for each team.
+    // Computed after each load or config change.
     category_size: {
-        "total": 1182,
+        // The team name, which is either `any` or a team color.
+        team: {
+            total: 1182,
+            ...
+        },
         ...
     }
 ```
