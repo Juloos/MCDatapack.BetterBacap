@@ -140,7 +140,7 @@
             bar_len: 64,
             // The percentage of the total progress with numbers (%).
             // One of "none", "left_outside", "right_outside",
-            //   "left_inside", "right_inside", "center_inside"
+            //   "left_inside", "right_inside"
             percent: "right_outside"
         },
 

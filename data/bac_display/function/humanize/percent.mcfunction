@@ -13,7 +13,4 @@ $execute if score percent.$(team) bac_display.config matches 3 run return run \
 $execute if score percent.$(team) bac_display.config matches 4 run return run \
     data modify storage bac_display:result percent set value "Inner right"
 
-$execute if score percent.$(team) bac_display.config matches 5 run return run \
-    data modify storage bac_display:result percent set value "Center"
-
 data modify storage bac_display:result percent set value "(Unknown)"

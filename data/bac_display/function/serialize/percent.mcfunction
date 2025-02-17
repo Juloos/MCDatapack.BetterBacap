@@ -8,6 +8,4 @@ execute if data storage bac_display:macro {data:{value:"left_inside"}} run \
     return 3
 execute if data storage bac_display:macro {data:{value:"right_inside"}} run \
     return 4
-execute if data storage bac_display:macro {data:{value:"center_inside"}} run \
-    return 5
 return -1
