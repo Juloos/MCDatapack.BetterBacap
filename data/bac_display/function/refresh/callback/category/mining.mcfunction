@@ -1,1 +1,1 @@
-$function bac_display:refresh/callback/category/macro/helper_extra {index:$(index), team:"$(team)", category:"mining", text:"Mining"}
+$function bac_display:refresh/callback/category/macro/helper_extra {index:$(index), team:"$(team)", to_page:"$(to_page)", category:"mining", text:"Mining"}

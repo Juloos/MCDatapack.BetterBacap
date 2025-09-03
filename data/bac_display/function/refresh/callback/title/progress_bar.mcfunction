@@ -11,7 +11,7 @@ scoreboard players operation total_progress bac_display.vars -= progress_hidden 
 $function bac_display:refresh/callback/title/progress_bar/prepare_data_prequel {team:"$(team)"}
 function bac_display:refresh/callback/title/progress_bar/prepare_data
 
-$data modify storage bac_display:macro data set value {team:"$(team)"}
+$data modify storage bac_display:macro data set value {team:"$(team)", to_page:"$(to_page)"}
 
 data modify storage bac_display:macro data.done set from storage bac_display:macro result.bar_done
 $data modify storage bac_display:macro data.done_style set from storage bac_display:data style.$(team).progress_bar.done

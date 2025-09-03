@@ -1,4 +1,4 @@
-$data modify storage bac_display:macro data set value {index:$(index), team:"$(team)", text:"Total"}
+$data modify storage bac_display:macro data set value {index:$(index), team:"$(team)", to_page:"$(to_page)", text:"Total"}
 $data modify storage bac_display:macro data.max set from storage bac_tracker:data category_size.$(team).total
 $execute store result score progress bac_display.vars \
     if data storage bac_tracker:data teams[{name:"$(team)"}].advancements[]

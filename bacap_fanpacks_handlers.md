@@ -108,7 +108,6 @@ Check for this player all your advancements as follow\*:
 execute unless entity @s[advancements={namespace:path/to/advancement=true}] \
     if data storage bac_tracker:data players[0].advancements[{name:"adv_bac_name",category:"adv_category"}] run \
         function namespace:path/to/backward_function
-
 ``` 
 
 \*Template is given for *one* advancement again, complete the different fields accordingly.

@@ -7,6 +7,7 @@ data remove storage bac_display:data bar_char_set
 data remove storage bac_display:data progress_bar
 data remove storage bac_display:data refresh_callback
 data remove storage bac_display:data page
+data remove storage bac_display:data draft
 data remove storage bac_tracker:data default_config
 data remove storage bac_tracker:data pack_info
 data remove storage bac_tracker:data players

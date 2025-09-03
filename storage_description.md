@@ -123,9 +123,6 @@
 
         show_sidebar: 0,
 
-        // Fixed vertical space per page (counting in lines).
-        page_size: 11,
-
         // Minimum horizontal space per page (counting in dashes).
         // Doesn't clamp the width of the page though.
         min_char_len: 26,
@@ -148,8 +145,6 @@
         // One of "yes", "no", "overflow".
         count_hidden: "no",
 
-        // The page initial setup, with the default number of pages (3).
-        page: [{}, {}, {}],
         // The refresh callbacks for the different pages.
         // Should be migrated to a preset system at some point.
         refresh_callbacks: [
@@ -159,39 +154,7 @@
         // The style to apply in different situations to different components.
         // Note that the style is a NBT JSON Style without the curly braces.
         style: {
-            when_complete: {
-                // The left-justified text.
-                text: '"color":"#54FC54"',
-                // The left number of the right-justified text.
-                progress_number: '"color":"#FCFC54"',
-                // The character in-between the right-justified text.
-                separator: '"color":"#FCA800"',
-                // The right number of the right-justified text.
-                max_number: '"color":"#FCFC54"',
-                // The progress bar, if shown.
-                progress_bar: '"color":"#54FC54"'
-            },
-
-            // Same components as above
-            when_incomplete: {
-                ...
-            },
-
-            // The text describing the page number.
-            pagination: '"color":"#A8A8A8","italic":true',
-
-            progress_bar: {
-                // The done part of the progress bar.
-                done: '"color":"#54FC54"',
-                // The remaining part of the progress bar.
-                remaining: '"color":"#A8A8A8"',
-                // The character(s) on the left of the progress bar.
-                left: '"color":"#FCFCFC"',
-                // The character(s) on the right of the progress bar.
-                right: '"color":"#FCFCFC"',
-                // The percentage that optionnally appear.
-                percent: '"color":"#FC54FC"'
-            }
+            // Refer to the `style` tag below.
         }
     },
 
@@ -210,23 +173,67 @@
         }
     },
 
+    // The style in use for the different teams.
+    style: {
+        when_complete: {
+            // The left-justified text.
+            text: '"color":"#54FC54"',
+            // The left number of the right-justified text.
+            progress_number: '"color":"#FCFC54"',
+            // The character in-between the right-justified text.
+            separator: '"color":"#FCA800"',
+            // The right number of the right-justified text.
+            max_number: '"color":"#FCFC54"',
+            // The progress bar, if shown.
+            progress_bar: '"color":"#54FC54"'
+        },
+
+        // Same components as above
+        when_incomplete: {
+            ...
+        },
+
+        // The text describing the page number.
+        pagination: '"color":"#A8A8A8","italic":true',
+
+        progress_bar: {
+            // The done part of the progress bar.
+            done: '"color":"#54FC54"',
+            // The remaining part of the progress bar.
+            remaining: '"color":"#A8A8A8"',
+            // The character(s) on the left of the progress bar.
+            left: '"color":"#FCFCFC"',
+            // The character(s) on the right of the progress bar.
+            right: '"color":"#FCFCFC"',
+            // The percentage that optionnally appear.
+            percent: '"color":"#FC54FC"'
+        }
+    }
+
     // The refresh callbacks in use for the different teams and pages.
     refresh_callback: {
         // The team name, which is either `any` or a team color.
         team: [
             {
+                // The storage subdomain to write the result to.
+                // Used to seperate callbacks for draft and sidebar.
+                to_page: "page",
+                
                 // The page index (+1) for callbacks to have context.
                 page_number: x,
+
+                // The number of lines in the page.
+                page_size: 11,
                 
                 // The callbacks are function macros with arguments
+                //   - `to_page` storage to write to
                 //   - `index` of the line in the page
                 //   - `team` of the corresponding sidebar
                 //   - `page_number` for convenience
                 // Except for the title callback, which only has `team`.
                 title: "bac_display:refresh/callback/title/foo",
                 // Even if `page_size` is less than 15, all the callbacks are
-                //   still called, which raises exceptions with empty strings.
-                // Use empty functions when filling unused callbacks.
+                //   still called, put empty strings for unused callbacks.
                 0..14: "bac_display:refresh/callback/bar"
             },
             ...
@@ -237,20 +244,38 @@
     // They will automatically fill the corresponding sidebars.
     page: {
         // The team name, which is either "any" or a team color.
-        team: [
-            {
-                // The team this page belongs to, for macro convenience.
-                team: `corresponding team`,
-                
-                // The following arguments are stringified raw JSON texts,
-                //   which means that an empty string is '""' and not "".
-                title: '"Advancements progress"',
-                // name_x is the left-justified text.
-                name_0..14: '["Category", " ", "name"]',
-                // number_x is the right-justified text.
-                number_0..14: '{"text": "Progress", "color": "green"}'
-            },
-            ...
-        ]
+        team: {
+            // The team this page belongs to, for macro convenience.
+            team: `corresponding team`,
+            
+            // The following arguments are stringified raw JSON texts,
+            //   which means that an empty string is '""' and not "".
+            title: '"Advancements progress"',
+            // name_x is the left-justified text.
+            name_0..14: '["Category", " ", "name"]',
+            // number_x is the right-justified text.
+            number_0..14: '{"text": "Progress", "color": "green"}'
+        }
+    }
+
+    // The draft configuration of the display of each team.
+    // For the customization menus to hold data.
+    draft: {
+        style: {
+            // Refer to the `style` tag above.
+        },
+        refresh_callback: {
+            // Refer to the `refresh_callback` tag above.
+        },
+        page: {
+            // Refer to the `page` tag above.
+        },
+        line: {
+            // The team name, which is either `any` or a team color.
+            team: {
+                // The index of the line in the page, pointing to the new callback.
+                0..14: "bac_display:refresh/callback/foobar"
+            }
+        }
     }
 ```

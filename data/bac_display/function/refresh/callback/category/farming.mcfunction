@@ -1,1 +1,1 @@
-$function bac_display:refresh/callback/category/macro/helper_extra {index:$(index), team:"$(team)", category:"farming", text:"Farming"}
+$function bac_display:refresh/callback/category/macro/helper_extra {index:$(index), team:"$(team)", to_page:"$(to_page)", category:"farming", text:"Farming"}

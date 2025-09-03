@@ -1,9 +1,9 @@
-data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, page_size:11, min_char_len:24, align:"spaced_aligned", count_hidden:"overflow"}
+data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, min_char_len:24, align:"spaced_aligned", count_hidden:"overflow"}
 
-data modify storage bac_display:data default_config.page set value [{}, {}, {}]
 data modify storage bac_display:data default_config.refresh_callback set value [ \
     { \
         page_number: 1, \
+        page_size: 11, \
         title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
@@ -16,12 +16,10 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         8: "bac_display:refresh/callback/category/challenges", \
         9: "bac_display:refresh/callback/blank", \
         10: "bac_display:refresh/callback/page_number", \
-        11: "bac_display:refresh/callback/blank", \
-        12: "bac_display:refresh/callback/blank", \
-        13: "bac_display:refresh/callback/blank", \
-        14: "bac_display:refresh/callback/blank", \
+        11: "", 12: "", 13: "", 14: "", \
     }, { \
         page_number: 2, \
+        page_size: 11, \
         title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
@@ -34,12 +32,10 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         8: "bac_display:refresh/callback/category/monsters", \
         9: "bac_display:refresh/callback/blank", \
         10: "bac_display:refresh/callback/page_number", \
-        11: "bac_display:refresh/callback/blank", \
-        12: "bac_display:refresh/callback/blank", \
-        13: "bac_display:refresh/callback/blank", \
-        14: "bac_display:refresh/callback/blank", \
+        11: "", 12: "", 13: "", 14: "", \
     }, { \
         page_number: 3, \
+        page_size: 11, \
         title: "bac_display:refresh/callback/title/progress_bar", \
         0: "bac_display:refresh/callback/blank", \
         1: "bac_display:refresh/callback/category/total", \
@@ -52,10 +48,7 @@ data modify storage bac_display:data default_config.refresh_callback set value [
         8: "bac_display:refresh/callback/category/weaponry", \
         9: "bac_display:refresh/callback/blank", \
         10: "bac_display:refresh/callback/page_number", \
-        11: "bac_display:refresh/callback/blank", \
-        12: "bac_display:refresh/callback/blank", \
-        13: "bac_display:refresh/callback/blank", \
-        14: "bac_display:refresh/callback/blank", \
+        11: "", 12: "", 13: "", 14: "", \
     } \
 ]
 

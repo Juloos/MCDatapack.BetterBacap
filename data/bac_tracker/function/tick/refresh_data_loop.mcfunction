@@ -1,8 +1,6 @@
 # Special case for when target_refresh_time is 1 or less: refresh every tick
-execute if score target_refresh_time bac_tracker.config matches ..1 run function bac_display:refresh
 execute if score target_refresh_time bac_tracker.config matches ..1 run return run \
-    execute as @a[scores={bac_tracker.player.tracking_enabled=1}] run \
-        function bac_tracker:refresh_data/player/all
+    function bac_tracker:refresh_data/run_all_iterations
 
 
 # End the previous iteration, then start refreshing scores again for the next time

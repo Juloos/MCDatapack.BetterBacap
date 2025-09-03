@@ -8,4 +8,4 @@ scoreboard players remove maxi utils.vars 1
 
 $data modify storage utils:macro data set value {break:"scoreboard players set i utils.vars $(to)"}
 $data modify storage utils:macro data merge value $(data)
-$function utils:_subtask/range_loop_macro_without_i {macro:"$(macro)"}
+$execute if score i utils.vars < maxi utils.vars run function utils:_subtask/range_loop_macro_without_i {macro:"$(macro)"}

@@ -1,4 +1,4 @@
-$data modify storage bac_display:macro data set value {index:$(index), team:"$(team)", text:"$(text)", progress:$(progress), max:$(max)}
+$data modify storage bac_display:macro data set value {index:$(index), team:"$(team)", to_page:"$(to_page)", text:"$(text)", progress:$(progress), max:$(max)}
 
 $scoreboard players set tmp bac_display.vars $(progress)
 $execute if score tmp bac_display.vars matches $(max).. run \
