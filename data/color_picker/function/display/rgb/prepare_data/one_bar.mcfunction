@@ -1,0 +1,1 @@
+$data modify storage color_picker:macro data.text_$(rgb).$(i) set value '"color":"$(color)","shadow_color":0,"clickEvent":{"action":"run_command","value":"/function color_picker:display/rgb/modify_rgb {rgb:$(rgb),v:$(i),c:$(callbacks_id)}"},"hoverEvent":{"action":"show_text","contents":{"text":"$(i)","color":"$(hover_color)"}}'

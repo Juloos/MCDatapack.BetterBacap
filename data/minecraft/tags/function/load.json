@@ -1,6 +1,7 @@
 {
     "values": [
         "utils:_load",
+        "color_picker:load",
         "bac_tracker:load",
         "bac_display:load"
     ]

@@ -1,0 +1,1 @@
+$data modify storage color_picker:data callbacks[$(callbacks_id)] merge value {confirm_callback:"$(confirm_callback)",update_callback:"$(update_callback)",cancel_callback:"$(cancel_callback)",id:$(callbacks_id)}
