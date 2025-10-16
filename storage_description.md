@@ -185,7 +185,18 @@
             // The right number of the right-justified text.
             max_number: '"color":"#FCFC54"',
             // The progress bar, if shown.
-            progress_bar: '"color":"#54FC54"'
+            progress_bar: {
+                // The done part of the progress bar.
+                done: '"color":"#54FC54"',
+                // The remaining part of the progress bar.
+                remaining: '"color":"#A8A8A8"',
+                // The character(s) on the left of the progress bar.
+                left: '"color":"#FCFCFC"',
+                // The character(s) on the right of the progress bar.
+                right: '"color":"#FCFCFC"',
+                // The percentage that optionnally appear.
+                percent: '"color":"#FC54FC"'
+            }
         },
 
         // Same components as above
@@ -194,20 +205,7 @@
         },
 
         // The text describing the page number.
-        pagination: '"color":"#A8A8A8","italic":true',
-
-        progress_bar: {
-            // The done part of the progress bar.
-            done: '"color":"#54FC54"',
-            // The remaining part of the progress bar.
-            remaining: '"color":"#A8A8A8"',
-            // The character(s) on the left of the progress bar.
-            left: '"color":"#FCFCFC"',
-            // The character(s) on the right of the progress bar.
-            right: '"color":"#FCFCFC"',
-            // The percentage that optionnally appear.
-            percent: '"color":"#FC54FC"'
-        }
+        pagination: '"color":"#A8A8A8","italic":true'
     }
 
     // The refresh callbacks in use for the different teams and pages.

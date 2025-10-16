@@ -57,22 +57,29 @@ data modify storage bac_display:data default_config.style set value { \
         text: '"color":"#54FC54"', \
         progress_number: '"color":"#FCFC54"', \
         separator: '"color":"#FCA800"', \
-        max_number: '"color":"#FCFC54"' \
+        max_number: '"color":"#FCFC54"', \
+        progress_bar: { \
+            done: '"color":"#54FC54"', \
+            remaining: '"color":"#A8A8A8"', \
+            left: '"color":"#FCFCFC"', \
+            right: '"color":"#FCFCFC"', \
+            percent: '"color":"#FC54FC"' \
+        } \
     }, \
     when_incomplete: { \
         text: '"color":"#FCFCFC"', \
         progress_number: '"color":"#FCFC54"', \
         separator: '"color":"#FCA800"', \
-        max_number: '"color":"#FCFC54"' \
+        max_number: '"color":"#FCFC54"', \
+        progress_bar: { \
+            done: '"color":"#54FC54"', \
+            remaining: '"color":"#A8A8A8"', \
+            left: '"color":"#FCFCFC"', \
+            right: '"color":"#FCFCFC"', \
+            percent: '"color":"#FC54FC"' \
+        } \
     }, \
-    pagination: '"color":"#A8A8A8","italic":true', \
-    progress_bar: { \
-        done: '"color":"#54FC54"', \
-        remaining: '"color":"#A8A8A8"', \
-        left: '"color":"#FCFCFC"', \
-        right: '"color":"#FCFCFC"', \
-        percent: '"color":"#FC54FC"' \
-    } \
+    pagination: '"color":"#A8A8A8","italic":true' \
 }
 
 data modify storage bac_display:data default_config.progress_bar set value { \
