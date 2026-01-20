@@ -41,3 +41,4 @@ If you wish to modify the code and run the datapack yourself, you have to run th
 - Improve the vanilla advancement logic to help with lags and bugs.
 - Create a leaderboard of the players based on their advancements rankings.
 - Modify the vanilla coop logic for a better tracking of the team advancements in some edge cases (players leaving teams, advancements revoked...).
+- Add [mcdoc](https://spyglassmc.com/user/mcdoc/) support for better documentation generation.
