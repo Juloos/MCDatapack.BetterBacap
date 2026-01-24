@@ -15,6 +15,11 @@ data remove storage bac_tracker:data players
 data remove storage bac_tracker:data teams
 data remove storage bac_tracker:data advancements
 data remove storage bac_tracker:data category_size
+data remove storage color_picker:data dec2hex
+data remove storage color_picker:data hex2dec
+data remove storage color_picker:data callbacks
+data remove storage style_picker:data draft
+data remove storage style_picker:data callbacks
 
 # Remove also all objectives
 scoreboard objectives remove bac_display.config
@@ -94,6 +99,7 @@ scoreboard objectives remove color_picker.rgb.h14.b
 scoreboard objectives remove color_picker.rgb.h15.r
 scoreboard objectives remove color_picker.rgb.h15.g
 scoreboard objectives remove color_picker.rgb.h15.b
+scoreboard objectives remove style_picker.vars
 scoreboard objectives remove utils.vars
 scoreboard objectives remove utils.player_count
 

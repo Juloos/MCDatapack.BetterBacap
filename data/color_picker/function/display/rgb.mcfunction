@@ -1,8 +1,10 @@
+data modify storage color_picker:macro data set value {id:"$(id)"}
+
 function color_picker:hex/export
 data modify storage color_picker:macro data.color set from storage color_picker:result hex
 
 $execute store result storage color_picker:macro data.callbacks_id byte 1 run \
-    function color_picker:display/rgb/define_callbacks {confirm_callback:"$(confirm_callback)",update_callback:"$(update_callback)",cancel_callback:"$(cancel_callback)"}
+    function color_picker:display/rgb/define_callbacks {id:"$(id)",confirm_callback:"$(confirm_callback)",update_callback:"$(update_callback)",cancel_callback:"$(cancel_callback)"}
 
 
 function color_picker:history/export_all

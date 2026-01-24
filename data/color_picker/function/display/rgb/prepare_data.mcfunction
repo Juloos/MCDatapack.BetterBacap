@@ -12,3 +12,6 @@ $data modify storage color_picker:macro data.text_b set value {rgb:b,color:"$(co
 $function utils:range_loop_macro {macro:"color_picker:display/rgb/prepare_data/one_bar",from:0,to:$(b),data:{rgb:b,color:"#0000ff",hover_color:"#0000ff",callbacks_id:$(callbacks_id)}}
 $function utils:range_loop_macro {macro:"color_picker:display/rgb/prepare_data/one_bar",from:$(b),to:256,data:{rgb:b,color:"#888888",hover_color:"#0000ff",callbacks_id:$(callbacks_id)}}
 function color_picker:display/rgb/prepare_data/merge256 with storage color_picker:macro data.text_b
+
+
+$data modify storage color_picker:macro data merge from storage color_picker:data callbacks[$(callbacks_id)]

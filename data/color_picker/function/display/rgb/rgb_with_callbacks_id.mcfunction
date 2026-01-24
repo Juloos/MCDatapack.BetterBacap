@@ -21,4 +21,6 @@ execute store result storage color_picker:macro data.g short 1 run scoreboard pl
 execute store result storage color_picker:macro data.b short 1 run scoreboard players remove @s color_picker.rgb.b 1
 
 
+function color_picker:display/rgb/update with storage color_picker:macro data
+
 function color_picker:display/rgb/finish with storage color_picker:macro data
