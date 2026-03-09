@@ -1,4 +1,4 @@
-data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, min_char_len:24, align:"spaced_aligned", count_hidden:"overflow"}
+data modify storage bac_display:data default_config set value {page_flip_time:200, show_sidebar:0, min_char_len:24, align:"spaced_aligned", count_terralith:"yes", count_amplified_nether:"yes", count_nullscape:"yes", count_hidden:"overflow"}
 
 data modify storage bac_display:data default_config.refresh_callback set value [ \
     { \

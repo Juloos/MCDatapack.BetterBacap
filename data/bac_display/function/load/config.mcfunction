@@ -407,8 +407,122 @@ execute unless score percent.yellow bac_display.config = percent.yellow bac_disp
     scoreboard players operation percent.yellow bac_display.config = default_percent bac_display.vars
 
 data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_terralith
+execute store result score default_count_terralith bac_display.vars run function bac_display:serialize/count_extra
+execute unless score count_terralith.any bac_display.config = count_terralith.any bac_display.config run \
+    scoreboard players operation count_terralith.any bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.aqua bac_display.config = count_terralith.aqua bac_display.config run \
+    scoreboard players operation count_terralith.aqua bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.black bac_display.config = count_terralith.black bac_display.config run \
+    scoreboard players operation count_terralith.black bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.blue bac_display.config = count_terralith.blue bac_display.config run \
+    scoreboard players operation count_terralith.blue bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_aqua bac_display.config = count_terralith.dark_aqua bac_display.config run \
+    scoreboard players operation count_terralith.dark_aqua bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_blue bac_display.config = count_terralith.dark_blue bac_display.config run \
+    scoreboard players operation count_terralith.dark_blue bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_gray bac_display.config = count_terralith.dark_gray bac_display.config run \
+    scoreboard players operation count_terralith.dark_gray bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_green bac_display.config = count_terralith.dark_green bac_display.config run \
+    scoreboard players operation count_terralith.dark_green bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_purple bac_display.config = count_terralith.dark_purple bac_display.config run \
+    scoreboard players operation count_terralith.dark_purple bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.dark_red bac_display.config = count_terralith.dark_red bac_display.config run \
+    scoreboard players operation count_terralith.dark_red bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.gold bac_display.config = count_terralith.gold bac_display.config run \
+    scoreboard players operation count_terralith.gold bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.gray bac_display.config = count_terralith.gray bac_display.config run \
+    scoreboard players operation count_terralith.gray bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.green bac_display.config = count_terralith.green bac_display.config run \
+    scoreboard players operation count_terralith.green bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.light_purple bac_display.config = count_terralith.light_purple bac_display.config run \
+    scoreboard players operation count_terralith.light_purple bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.red bac_display.config = count_terralith.red bac_display.config run \
+    scoreboard players operation count_terralith.red bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.white bac_display.config = count_terralith.white bac_display.config run \
+    scoreboard players operation count_terralith.white bac_display.config = default_count_terralith bac_display.vars
+execute unless score count_terralith.yellow bac_display.config = count_terralith.yellow bac_display.config run \
+    scoreboard players operation count_terralith.yellow bac_display.config = default_count_terralith bac_display.vars
+
+data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_amplified_nether
+execute store result score default_count_amplified_nether bac_display.vars run function bac_display:serialize/count_extra
+execute unless score count_amplified_nether.any bac_display.config = count_amplified_nether.any bac_display.config run \
+    scoreboard players operation count_amplified_nether.any bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.aqua bac_display.config = count_amplified_nether.aqua bac_display.config run \
+    scoreboard players operation count_amplified_nether.aqua bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.black bac_display.config = count_amplified_nether.black bac_display.config run \
+    scoreboard players operation count_amplified_nether.black bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.blue bac_display.config = count_amplified_nether.blue bac_display.config run \
+    scoreboard players operation count_amplified_nether.blue bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_aqua bac_display.config = count_amplified_nether.dark_aqua bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_aqua bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_blue bac_display.config = count_amplified_nether.dark_blue bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_blue bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_gray bac_display.config = count_amplified_nether.dark_gray bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_gray bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_green bac_display.config = count_amplified_nether.dark_green bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_green bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_purple bac_display.config = count_amplified_nether.dark_purple bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_purple bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.dark_red bac_display.config = count_amplified_nether.dark_red bac_display.config run \
+    scoreboard players operation count_amplified_nether.dark_red bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.gold bac_display.config = count_amplified_nether.gold bac_display.config run \
+    scoreboard players operation count_amplified_nether.gold bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.gray bac_display.config = count_amplified_nether.gray bac_display.config run \
+    scoreboard players operation count_amplified_nether.gray bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.green bac_display.config = count_amplified_nether.green bac_display.config run \
+    scoreboard players operation count_amplified_nether.green bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.light_purple bac_display.config = count_amplified_nether.light_purple bac_display.config run \
+    scoreboard players operation count_amplified_nether.light_purple bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.red bac_display.config = count_amplified_nether.red bac_display.config run \
+    scoreboard players operation count_amplified_nether.red bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.white bac_display.config = count_amplified_nether.white bac_display.config run \
+    scoreboard players operation count_amplified_nether.white bac_display.config = default_count_amplified_nether bac_display.vars
+execute unless score count_amplified_nether.yellow bac_display.config = count_amplified_nether.yellow bac_display.config run \
+    scoreboard players operation count_amplified_nether.yellow bac_display.config = default_count_amplified_nether bac_display.vars
+
+data remove storage bac_display:macro data
+data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_nullscape
+execute store result score default_count_nullscape bac_display.vars run function bac_display:serialize/count_extra
+execute unless score count_nullscape.any bac_display.config = count_nullscape.any bac_display.config run \
+    scoreboard players operation count_nullscape.any bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.aqua bac_display.config = count_nullscape.aqua bac_display.config run \
+    scoreboard players operation count_nullscape.aqua bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.black bac_display.config = count_nullscape.black bac_display.config run \
+    scoreboard players operation count_nullscape.black bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.blue bac_display.config = count_nullscape.blue bac_display.config run \
+    scoreboard players operation count_nullscape.blue bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_aqua bac_display.config = count_nullscape.dark_aqua bac_display.config run \
+    scoreboard players operation count_nullscape.dark_aqua bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_blue bac_display.config = count_nullscape.dark_blue bac_display.config run \
+    scoreboard players operation count_nullscape.dark_blue bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_gray bac_display.config = count_nullscape.dark_gray bac_display.config run \
+    scoreboard players operation count_nullscape.dark_gray bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_green bac_display.config = count_nullscape.dark_green bac_display.config run \
+    scoreboard players operation count_nullscape.dark_green bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_purple bac_display.config = count_nullscape.dark_purple bac_display.config run \
+    scoreboard players operation count_nullscape.dark_purple bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.dark_red bac_display.config = count_nullscape.dark_red bac_display.config run \
+    scoreboard players operation count_nullscape.dark_red bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.gold bac_display.config = count_nullscape.gold bac_display.config run \
+    scoreboard players operation count_nullscape.gold bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.gray bac_display.config = count_nullscape.gray bac_display.config run \
+    scoreboard players operation count_nullscape.gray bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.green bac_display.config = count_nullscape.green bac_display.config run \
+    scoreboard players operation count_nullscape.green bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.light_purple bac_display.config = count_nullscape.light_purple bac_display.config run \
+    scoreboard players operation count_nullscape.light_purple bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.red bac_display.config = count_nullscape.red bac_display.config run \
+    scoreboard players operation count_nullscape.red bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.white bac_display.config = count_nullscape.white bac_display.config run \
+    scoreboard players operation count_nullscape.white bac_display.config = default_count_nullscape bac_display.vars
+execute unless score count_nullscape.yellow bac_display.config = count_nullscape.yellow bac_display.config run \
+    scoreboard players operation count_nullscape.yellow bac_display.config = default_count_nullscape bac_display.vars
+
+data remove storage bac_display:macro data
 data modify storage bac_display:macro data.value set from storage bac_display:data default_config.count_hidden
-execute store result score default_count_hidden bac_display.vars run function bac_display:serialize/count_hidden
+execute store result score default_count_hidden bac_display.vars run function bac_display:serialize/count_extra
 execute unless score count_hidden.any bac_display.config = count_hidden.any bac_display.config run \
     scoreboard players operation count_hidden.any bac_display.config = default_count_hidden bac_display.vars
 execute unless score count_hidden.aqua bac_display.config = count_hidden.aqua bac_display.config run \

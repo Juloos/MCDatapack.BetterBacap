@@ -1,15 +1,20 @@
 data modify storage minecraft:buffer advancements set from storage bac_tracker:data advancements
 
-# TODO: , count_terralith:"yes", count_amplified_nether:"yes", count_nullscape:"yes"
-$execute if score count_terralith.$(team) bac_display.config matches 0..1 \
+$execute if score count_terralith.$(team) bac_display.config matches 0..1 run \
+    data remove storage minecraft:buffer advancements[{extra_categories:["terralith"]}]
+$execute unless score count_terralith.$(team) bac_display.config matches 0..1 \
     if data storage bac_tracker:data {pack_info:{extensions:{bac_terralith:0b}}} run \
         data remove storage minecraft:buffer advancements[{extra_categories:["terralith"]}]
 
-$execute if score count_amplified_nether.$(team) bac_display.config matches 0..1 \
+$execute if score count_amplified_nether.$(team) bac_display.config matches 0..1 run \
+    data remove storage minecraft:buffer advancements[{extra_categories:["amplified_nether"]}]
+$execute unless score count_amplified_nether.$(team) bac_display.config matches 0..1 \
     if data storage bac_tracker:data {pack_info:{extensions:{bac_amplified_nether:0b}}} run \
         data remove storage minecraft:buffer advancements[{extra_categories:["amplified_nether"]}]
 
-$execute if score count_nullscape.$(team) bac_display.config matches 0..1 \
+$execute if score count_nullscape.$(team) bac_display.config matches 0..1 run \
+    data remove storage minecraft:buffer advancements[{extra_categories:["nullscape"]}]
+$execute unless score count_nullscape.$(team) bac_display.config matches 0..1 \
     if data storage bac_tracker:data {pack_info:{extensions:{bac_nullscape:0b}}} run \
         data remove storage minecraft:buffer advancements[{extra_categories:["nullscape"]}]
 

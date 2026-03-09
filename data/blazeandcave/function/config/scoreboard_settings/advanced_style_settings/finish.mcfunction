@@ -3,9 +3,3 @@ tellraw @s {"text":"                                             ","color":"dark
 $tellraw @s ["",{"color":"gray","bold":false,"text":" $(name) v$(version): bac-$(bacap) mc-$(minecraft)"}]
 $tellraw @s [""," ",{"color":"gray","bold":false,"translate":"$(team_name)"},{"color":"gray","bold":false,"text":": "},{"color":"gray","bold":false,"translate":"Advanced Style Customization Menu"}]
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
-
-
-
-# Setup the color and style picker
-data modify storage blazeandcave:macro data set value {id:"bac_advanced_style_settings",confirm_callback:"blazeandcave:config/scoreboard_settings/advanced_style_settings/confirm",update_callback:"",cancel_callback:"blazeandcave:config/scoreboard_settings/advanced_style_settings"}
-function style_picker:display/basic with storage blazeandcave:macro data

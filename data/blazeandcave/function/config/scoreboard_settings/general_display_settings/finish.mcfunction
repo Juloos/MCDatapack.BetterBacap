@@ -18,7 +18,10 @@ tellraw @s {"text":"                                             ","color":"dark
 $execute store result score page_update_rate.$(team) bac_display.vars run \
     data get storage bac_display:data progress_bar.$(team).bar_len
 $tellraw @s ["",{"text":"[+10]","color":"green","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/scoreboard_settings/general_display_settings/page_update_rate_add_10 {team:\"$(team)\"}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to add 10","color":"gold"}]}}," ",{"text":"[set]","color":"yellow","clickEvent":{"action":"suggest_command","value":"/function blazeandcave:config/scoreboard_settings/general_display_settings/page_update_rate_custom {team:\"$(team)\",new_value:XXX}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to manually modify","color":"gold"}]}}," ",{"text":"[-10]","color":"red","clickEvent":{"action":"run_command","value":"/function blazeandcave:config/scoreboard_settings/general_display_settings/page_update_rate_remove_10 {team:\"$(team)\"}"},"hoverEvent":{"action":"show_text","contents":["",{"translate":"Click to remove 10","color":"gold"}]}}," ",{"translate":"Page update rate"},": ",{"score":{"name":"page_flip_time.$(team)","objective":"bac_display.config"},"color":"yellow"},{"text":"t","color":"yellow"}]
-$tellraw @s ["",$(count_hidden_toggles)," ",{"translate":"Counting hidden advancements"},": ",{"translate":"$(count_hidden_description)","color":"yellow"}]
+$tellraw @s ["",$(count_terralith_toggles)," ",{"translate":"Count Terralith advancements"},": ",{"translate":"$(count_terralith_description)","color":"yellow"}]
+$tellraw @s ["",$(count_amplified_nether_toggles)," ",{"translate":"Count Amplified Nether advancements"},": ",{"translate":"$(count_amplified_nether_description)","color":"yellow"}]
+$tellraw @s ["",$(count_nullscape_toggles)," ",{"translate":"Count Nullscape advancements"},": ",{"translate":"$(count_nullscape_description)","color":"yellow"}]
+$tellraw @s ["",$(count_hidden_toggles)," ",{"translate":"Count hidden advancements"},": ",{"translate":"$(count_hidden_description)","color":"yellow"}]
 tellraw @s {"text":"                                             ","color":"dark_gray","strikethrough":true}
 
 # Go back
