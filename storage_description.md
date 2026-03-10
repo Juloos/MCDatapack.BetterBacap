@@ -106,7 +106,7 @@
     // Computed after each load or config change.
     category_size: {
         // The team name, which is either `any` or a team color.
-        team: {
+        <team>: {
             total: 1182,
             ...
         },
@@ -167,7 +167,7 @@
     // The progress bar settings in use for the different teams.
     progress_bar: {
         // The team name, which is either `any` or a team color.
-        team: {
+        <team>: {
             bar_len: 64,
             percent: "right_outside"
         }
@@ -211,7 +211,7 @@
     // The refresh callbacks in use for the different teams and pages.
     refresh_callback: {
         // The team name, which is either `any` or a team color.
-        team: [
+        <team>: [
             {
                 // The storage subdomain to write the result to.
                 // Used to seperate callbacks for draft and sidebar.
@@ -232,7 +232,7 @@
                 title: "bac_display:refresh/callback/title/foo",
                 // Even if `page_size` is less than 15, all the callbacks are
                 //   still called, put empty strings for unused callbacks.
-                0..14: "bac_display:refresh/callback/bar"
+                <0..14>: "bac_display:refresh/callback/bar"
             },
             ...
         ]
@@ -242,7 +242,7 @@
     // They will automatically fill the corresponding sidebars.
     page: {
         // The team name, which is either "any" or a team color.
-        team: {
+        <team>: {
             // The team this page belongs to, for macro convenience.
             team: `corresponding team`,
             
@@ -250,9 +250,9 @@
             //   which means that an empty string is '""' and not "".
             title: '"Advancements progress"',
             // name_x is the left-justified text.
-            name_0..14: '["Category", " ", "name"]',
+            name_<0..14>: '["Category", " ", "name"]',
             // number_x is the right-justified text.
-            number_0..14: '{"text": "Progress", "color": "green"}'
+            number_<0..14>: '{"text": "Progress", "color": "green"}'
         }
     }
 
@@ -270,9 +270,9 @@
         },
         line: {
             // The team name, which is either `any` or a team color.
-            team: {
+            <team>: {
                 // The index of the line in the page, pointing to the new callback.
-                0..14: "bac_display:refresh/callback/foobar"
+                <0..14>: "bac_display:refresh/callback/foobar"
             }
         }
     }
